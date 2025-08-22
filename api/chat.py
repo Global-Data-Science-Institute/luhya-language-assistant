@@ -17,7 +17,7 @@ class LuhyaRAGSystem:
         self.lang_pair_index = {}
         
         # URL to your processed dataset (you'll host this)
-        self.dataset_url = "https://raw.githubusercontent.com/yourusername/yourrepo/main/luhya_dataset.json"
+        self.dataset_url = "https://raw.githubusercontent.com/Global-Data-Science-Institute/luhya-language-assistant/refs/heads/main/data/luhya_dataset.json"
         
         self.conversation_patterns = {
             'greeting_starters': [
