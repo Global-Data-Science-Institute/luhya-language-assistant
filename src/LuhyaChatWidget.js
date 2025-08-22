@@ -5,7 +5,7 @@ const LuhyaChatWidget = () => {
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
-      content: 'Muraho! I\'m your Luhya language assistant. Ask me about translations, proverbs, or cultural insights!',
+      content: 'mulembe! I\'m your Luhya language assistant. Ask me about translations, proverbs, or cultural insights!',
       timestamp: new Date()
     }
   ]);

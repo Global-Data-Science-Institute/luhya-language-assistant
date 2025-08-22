@@ -21,7 +21,7 @@ const LuhyaRAGChat = () => {
     {
       id: 1,
       role: 'assistant',
-      content: 'Muraho! I\'m your Luhya language assistant powered by TF-IDF search. I can help you with translations, word meanings, and cultural insights from our comprehensive Luhya database. What would you like to explore today?',
+      content: 'mulembe! I\'m your Luhya language assistant powered by TF-IDF search. I can help you with translations, word meanings, and cultural insights from our comprehensive Luhya database. What would you like to explore today?',
       timestamp: new Date(),
       sources: []
     }
@@ -137,7 +137,7 @@ const LuhyaRAGChat = () => {
       {
         id: Date.now(),
         role: 'assistant',
-        content: 'Muraho! I\'m your Luhya language assistant powered by TF-IDF search. I can help you with translations, word meanings, and cultural insights from our comprehensive Luhya database. What would you like to explore today?',
+        content: 'mulembe! I\'m your Luhya language assistant powered by TF-IDF search. I can help you with translations, word meanings, and cultural insights from our comprehensive Luhya database. What would you like to explore today?',
         timestamp: new Date(),
         sources: []
       }
@@ -147,7 +147,7 @@ const LuhyaRAGChat = () => {
   // Sample queries for quick testing
   const sampleQueries = [
     "How do you say 'good morning' in Luhya?",
-    "What does 'muraho' mean?",
+    "What does 'mulembe' mean?",
     "How do you say 'thank you' in different Luhya dialects?",
     "What is the Luhya word for 'water'?",
     "Tell me about Luhya greetings"
