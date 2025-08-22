@@ -49,7 +49,7 @@ const LuhyaRAGChat = () => {
 
   const checkSystemHealth = async () => {
     try {
-      const response = await fetch('/api/health');
+      const response = await fetch('https://luhya-language-assistant.vercel.app/api/health');
       if (response.ok) {
         const data = await response.json();
         setSystemStatus({ status: 'connected', cost: data.cost || '$0.00' });
@@ -74,16 +74,16 @@ const LuhyaRAGChat = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch('/api/chat', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          message: inputText,
-          max_results: 5
-        })
-      });
+    const response = await fetch('https://luhya-language-assistant.vercel.app/api/chat', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    message: inputText,
+    max_results: 5
+  })
+});
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
