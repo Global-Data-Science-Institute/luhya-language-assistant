@@ -573,7 +573,7 @@ class EnhancedLuhyaRAGSystem:
             return """Luhya greetings:
 
 **Daily Greetings:**
-• **Muraho** — General greeting (used anytime)
+• **Mulembe** — General greeting (used anytime)
 • **Bwakhera** — "Good morning"
 • **Bwirire** — "Good evening"
 
@@ -586,8 +586,8 @@ class EnhancedLuhyaRAGSystem:
         return f"""I couldn't find specific information about that in my Luhya database ({total_entries:,} translations).
 
 **Try asking about:**
-• **Greetings**: "How do you say 'good morning' in Luhya?"
-• **Courtesy**: "What's 'thank you' in different Luhya dialects?"
+• **Greetings**: "How do you say good morning' in Luhya?"
+• **Courtesy**: "What's thank you in different Luhya dialects?"
 • **Basic words**: "How to say 'water' or 'food' in Luhya?"
 • **Family terms**: "What's 'mother' in Luhya?"
 

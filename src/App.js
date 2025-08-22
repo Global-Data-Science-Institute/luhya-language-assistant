@@ -146,9 +146,9 @@ const LuhyaRAGChat = () => {
 
   // Sample queries for quick testing
   const sampleQueries = [
-    "How do you say 'good morning' in Luhya?",
-    "What does 'mulembe' mean?",
-    "How do you say 'thank you' in different Luhya dialects?",
+    "How do you say good morning' in Luhya?",
+    "What does mulembe mean?",
+    "How do you say thank you in different Luhya dialects?",
     "What is the Luhya word for 'water'?",
     "Tell me about Luhya greetings"
   ];
@@ -336,7 +336,7 @@ const LuhyaRAGChat = () => {
                       : 'bg-white border border-gray-200'
                   }`}>
                     <div className="text-sm leading-relaxed whitespace-pre-wrap">
-                      {message.content}
+                    <MarkdownText text={message.content} />
                     </div>
                     
                     {message.sources && message.sources.length > 0 && (
