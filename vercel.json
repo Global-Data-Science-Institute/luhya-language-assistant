@@ -1,10 +1,7 @@
 {
   "functions": {
-    "api/chat.py": {
-      "runtime": "@vercel/python"
-    },
-    "api/health.py": {
-      "runtime": "@vercel/python"
+    "api/*.js": {
+      "runtime": "@vercel/node"
     }
   }
 }
