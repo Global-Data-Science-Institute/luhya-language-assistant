@@ -1,10 +1,10 @@
 {
   "functions": {
     "api/chat.py": {
-      "runtime": "@vercel/python@latest"
+      "maxDuration": 30
     },
     "api/health.py": {
-      "runtime": "@vercel/python@latest"
+      "maxDuration": 30
     }
   }
 }
