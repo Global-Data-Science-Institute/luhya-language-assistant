@@ -15,6 +15,8 @@ import {
   Search,
   Zap
 } from 'lucide-react';
+import MarkdownText from './MarkdownText';
+
 
 const LuhyaRAGChat = () => {
   const [messages, setMessages] = useState([
