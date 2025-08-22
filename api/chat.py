@@ -1,4 +1,4 @@
-# api/chat.py - Production Vercel serverless function with JSON dataset
+# api/chat.py - Enhanced Vercel serverless function
 import json
 import os
 import re
@@ -8,7 +8,7 @@ from urllib.request import urlopen
 from urllib.error import URLError
 from werkzeug.wrappers import Request, Response
 
-class LuhyaRAGSystem:
+class EnhancedLuhyaRAGSystem:
     def __init__(self):
         self.is_initialized = False
         self.documents = []
@@ -17,7 +17,7 @@ class LuhyaRAGSystem:
         self.domain_index = {}
         self.lang_pair_index = {}
         
-        # URL to your processed dataset (you'll host this)
+        # URL to your processed dataset
         self.dataset_url = "https://raw.githubusercontent.com/Global-Data-Science-Institute/luhya-language-assistant/refs/heads/main/data/luhya_dataset.json"
         
         self.conversation_patterns = {
@@ -174,8 +174,8 @@ class LuhyaRAGSystem:
         # Fallback to basic dataset
         return self.load_fallback_data()
     
-    def detect_query_intent(self, query: str) -> Dict:
-        """Detect user intent from query"""
+    def detect_query_intent_enhanced(self, query: str) -> Dict:
+        """Enhanced intent detection with better pattern matching"""
         query_lower = query.lower().strip()
         
         intent_data = {
@@ -199,39 +199,47 @@ class LuhyaRAGSystem:
                 intent_data['target_dialect'] = dialect_name
                 break
         
-        # Translation request patterns
-        translation_patterns = [
-            r'what (?:is|does|means?) ([^?]+?) in luhya(?:\?|$)',
-            r'how (?:do you say|to say) ([^?]+?) in luhya(?:\?|$)',
-            r'luhya (?:word|translation) for ([^?]+?)(?:\?|$)',
-            r'translate ([^?]+?) (?:to|into) luhya(?:\?|$)',
-            r'say ([^?]+?) in luhya(?:\?|$)',
-            r'how do you say ([^?]+?)(?:\?|$)'
+        # Enhanced patterns for better intent detection - ORDER MATTERS!
+        patterns = [
+            # TRANSLATION REQUEST PATTERNS (highest priority)
+            ('translation_request', [
+                r'what (?:is|does|means?) ([^?]+?) in luhya(?:\?|$)',  # "what is water in luhya"
+                r'what is the luhya (?:word|translation) for ([^?]+?)(?:\?|$)',  # "what is the luhya word for water"
+                r'how (?:do you say|to say) ([^?]+?) in luhya(?:\?|$)',  # "how do you say water in luhya"
+                r'luhya (?:word|translation) for ([^?]+?)(?:\?|$)',  # "luhya word for water"
+                r'translate ([^?]+?) (?:to|into) luhya(?:\?|$)',  # "translate water to luhya"
+                r'how do i say ([^?]+?)(?:\?|$)',  # "how do i say water"
+                r'say ([^?]+?) in luhya(?:\?|$)',  # "say water in luhya"
+                r'([^?]+?) in luhya(?:\?|$)',  # "water in luhya"
+            ]),
+            # DICTIONARY LOOKUP PATTERNS (checked after translation patterns)
+            ('dictionary_lookup', [
+                r'what (?:is|does|means?) ([a-zA-Z]+[a-zA-Z]*)(?:\?|$)',  # "what is amatsi" - Luhya words
+                r'(?:meaning of|define) ([^?]+?)(?:\?|$)',  # "meaning of amatsi"
+                r'tell me about ([^?]+?)(?:\?|$)',  # "tell me about amatsi"
+                r'what does ([^?]+?) mean(?:\?|$)',  # "what does amatsi mean"
+            ]),
         ]
         
-        # Dictionary lookup patterns
-        dictionary_patterns = [
-            r'what (?:is|does|means?) ([a-zA-Z]+)(?:\?|$)',
-            r'(?:meaning of|define) ([^?]+?)(?:\?|$)',
-            r'what does ([^?]+?) mean(?:\?|$)'
-        ]
-        
-        # Check translation patterns
-        for pattern in translation_patterns:
-            match = re.search(pattern, query_lower)
-            if match:
-                intent_data['primary_intent'] = 'translation_request'
-                intent_data['key_terms'] = [match.group(1).strip()]
-                break
-        
-        # Check dictionary patterns
-        if intent_data['primary_intent'] == 'general':
-            for pattern in dictionary_patterns:
+        # Check patterns in order (translation patterns first!)
+        for intent, pattern_list in patterns:
+            for pattern in pattern_list:
                 match = re.search(pattern, query_lower)
                 if match:
-                    intent_data['primary_intent'] = 'dictionary_lookup'
-                    intent_data['key_terms'] = [match.group(1).strip()]
+                    intent_data['primary_intent'] = intent
+                    if match.groups():
+                        # Clean the extracted term
+                        extracted_term = match.group(1).strip()
+                        # Remove common trailing words that might be captured
+                        cleaned_term = re.sub(r'\s+(?:in luhya|language)$', '', extracted_term)
+                        # Remove articles and common prefixes
+                        cleaned_term = re.sub(r'^(?:a |an |the |my |his |her |our |their )', '', cleaned_term)
+                        # Remove extra whitespace
+                        cleaned_term = cleaned_term.strip()
+                        intent_data['key_terms'] = [cleaned_term]
                     break
+            if intent_data['primary_intent'] != 'general':
+                break
         
         # Extract key terms if not found
         if not intent_data['key_terms']:
@@ -242,31 +250,47 @@ class LuhyaRAGSystem:
         
         return intent_data
     
-    def smart_search(self, query: str, intent_data: Dict, max_results: int = 15) -> List[Dict]:
-        """Intelligent search with multiple strategies"""
+    def smart_search_enhanced(self, query: str, intent_data: Dict, max_results: int = 15) -> List[Dict]:
+        """Enhanced intelligent search with multiple strategies"""
         if not self.is_initialized:
             return []
         
         all_results = []
         
-        # Strategy 1: Exact term matching
-        exact_results = self.exact_term_search(intent_data['key_terms'], intent_data)
-        all_results.extend(exact_results)
+        # Strategy 1: Exact term matching (highest priority for dictionary lookups)
+        exact_results = self.exact_term_search_enhanced(intent_data['key_terms'], intent_data)
+        for result in exact_results:
+            result['strategy_weight'] = 1.0
+            all_results.append(result)
         
         # Strategy 2: Fuzzy term matching
         fuzzy_results = self.fuzzy_term_search(intent_data['key_terms'], intent_data)
-        all_results.extend(fuzzy_results)
+        for result in fuzzy_results:
+            result['strategy_weight'] = 0.8
+            all_results.append(result)
         
         # Strategy 3: Dialect-specific search
         if intent_data.get('target_dialect'):
             dialect_results = self.dialect_search(intent_data['target_dialect'], intent_data['key_terms'])
-            all_results.extend(dialect_results)
+            for result in dialect_results:
+                result['strategy_weight'] = 0.7
+                all_results.append(result)
         
-        # Remove duplicates and sort by score
+        # Enhanced scoring and deduplication
         seen_ids = set()
         unique_results = []
         
-        for result in sorted(all_results, key=lambda x: x.get('similarity', 0), reverse=True):
+        # Calculate final scores: similarity * strategy_weight
+        for result in all_results:
+            original_similarity = result.get('similarity', 0)
+            strategy_weight = result.get('strategy_weight', 0.5)
+            result['final_score'] = original_similarity * strategy_weight
+        
+        # Sort by final score (highest first)
+        all_results.sort(key=lambda x: x.get('final_score', 0), reverse=True)
+        
+        # Deduplicate while preserving order
+        for result in all_results:
             result_id = result['metadata'].get('id', '')
             if result_id not in seen_ids:
                 seen_ids.add(result_id)
@@ -277,8 +301,8 @@ class LuhyaRAGSystem:
         
         return unique_results
     
-    def exact_term_search(self, key_terms: List[str], intent_data: Dict) -> List[Dict]:
-        """Search for exact term matches"""
+    def exact_term_search_enhanced(self, key_terms: List[str], intent_data: Dict) -> List[Dict]:
+        """Enhanced exact term search with better scoring"""
         results = []
         
         for term in key_terms:
@@ -291,27 +315,42 @@ class LuhyaRAGSystem:
                 target_text = metadata.get('target_text', '').lower()
                 
                 score = 0
+                reason = ""
                 
                 # Exact matches get highest score
                 if term_lower == source_text:
                     score = 1.0
+                    reason = f"Exact source match for '{term}'"
                 elif term_lower == target_text:
                     score = 0.95
-                elif term_lower in source_text and len(term_lower) > 3:
+                    reason = f"Exact target match for '{term}'"
+                # Word boundary matches
+                elif re.search(rf'\b{re.escape(term_lower)}\b', source_text):
+                    score = 0.85
+                    reason = f"Word boundary match in source for '{term}'"
+                elif re.search(rf'\b{re.escape(term_lower)}\b', target_text):
                     score = 0.8
+                    reason = f"Word boundary match in target for '{term}'"
+                # Partial matches
+                elif term_lower in source_text and len(term_lower) > 3:
+                    score = 0.7
+                    reason = f"Partial match in source for '{term}'"
                 elif term_lower in target_text and len(term_lower) > 3:
-                    score = 0.75
+                    score = 0.65
+                    reason = f"Partial match in target for '{term}'"
                 
                 # Boost score for dialect preference
                 if intent_data.get('target_dialect') and metadata.get('dialect') == intent_data['target_dialect']:
                     score *= 1.2
+                    reason += f" (dialect boost: {intent_data['target_dialect']})"
                 
                 if score > 0:
                     results.append({
                         'content': self.documents[i],
                         'metadata': metadata,
                         'similarity': score,
-                        'match_reason': f'Exact match for "{term}"'
+                        'match_reason': reason,
+                        'search_strategy': 'exact_term_enhanced'
                     })
         
         return results
@@ -350,8 +389,9 @@ class LuhyaRAGSystem:
                     results.append({
                         'content': self.documents[i],
                         'metadata': metadata,
-                        'similarity': min(score, 0.9),  # Cap fuzzy scores
-                        'match_reason': f'Partial match for "{term}"'
+                        'similarity': min(score, 0.9),
+                        'match_reason': f'Partial match for "{term}"',
+                        'search_strategy': 'fuzzy_term'
                     })
         
         return results
@@ -383,15 +423,16 @@ class LuhyaRAGSystem:
                     'content': self.documents[idx],
                     'metadata': metadata,
                     'similarity': score,
-                    'match_reason': f'Dialect-specific: {dialect}'
+                    'match_reason': f'Dialect-specific: {dialect}',
+                    'search_strategy': 'dialect_search'
                 })
         
         return results
     
-    def generate_response(self, query: str, results: List[Dict], intent_data: Dict) -> str:
-        """Generate human-like response"""
+    def generate_enhanced_response(self, query: str, results: List[Dict], intent_data: Dict) -> str:
+        """Generate enhanced human-like response"""
         if not results:
-            return self.generate_no_results_response(query, intent_data)
+            return self.generate_no_results_response_enhanced(query, intent_data)
         
         response_parts = []
         
@@ -402,20 +443,20 @@ class LuhyaRAGSystem:
         
         # Generate main content based on intent
         if intent_data['primary_intent'] in ['translation_request', 'dictionary_lookup']:
-            main_content = self.format_translation_response(query, results, intent_data)
+            main_content = self.format_translation_response_enhanced(query, results, intent_data)
         else:
-            main_content = self.format_general_response(query, results)
+            main_content = self.format_general_response_enhanced(query, results)
         
         response_parts.append(main_content)
         
         return "".join(response_parts)
     
-    def format_translation_response(self, query: str, results: List[Dict], intent_data: Dict) -> str:
-        """Format translation response"""
+    def format_translation_response_enhanced(self, query: str, results: List[Dict], intent_data: Dict) -> str:
+        """Enhanced translation response formatting"""
         response_parts = []
         
         # Extract the term being asked about
-        query_term = intent_data['key_terms'][0] if intent_data['key_terms'] else ""
+        query_term = self.extract_query_term(query)
         
         # Group results by dialect
         dialect_groups = {}
@@ -439,8 +480,15 @@ class LuhyaRAGSystem:
                 for result in dialect_results[:3]:
                     meta = result['metadata']
                     target = meta.get('target_text', '')
+                    source = meta.get('source_text', '')
+                    
                     if target and target not in seen_targets:
-                        response_parts.append(f"• **{target}**\n")
+                        if intent_data['primary_intent'] == 'dictionary_lookup' and query_term.lower() == target.lower():
+                            # For dictionary lookups, show source→target
+                            response_parts.append(f"• **{source}** → **{target}**\n")
+                        else:
+                            # For translation requests, show target
+                            response_parts.append(f"• **{target}**\n")
                         seen_targets.add(target)
                 
                 if len(dialect_groups) > 1:
@@ -465,13 +513,34 @@ class LuhyaRAGSystem:
         
         return "".join(response_parts)
     
-    def format_general_response(self, query: str, results: List[Dict]) -> str:
-        """Format general response"""
+    def extract_query_term(self, query: str) -> str:
+        """Extract the term being asked about"""
+        query_lower = query.lower()
+        
+        patterns = [
+            r'what (?:is|does|means?) ["\']?([^"\'?]+)["\']? in luhya',
+            r'how (?:do you say|to say) ["\']?([^"\'?]+)["\']? in luhya',
+            r'luhya (?:word|translation) for ["\']?([^"\'?]+)["\']?',
+            r'translate ["\']?([^"\'?]+)["\']? (?:to|into) luhya',
+            r'how do i say ["\']?([^"\'?]+)["\']?',
+            r'say ["\']?([^"\'?]+)["\']? in luhya',
+            r'([^?]+?) in luhya(?:\?|$)'
+        ]
+        
+        for pattern in patterns:
+            match = re.search(pattern, query_lower)
+            if match:
+                return match.group(1).strip()
+        
+        return ""
+    
+    def format_general_response_enhanced(self, query: str, results: List[Dict]) -> str:
+        """Enhanced general response formatting"""
         response_parts = []
         
         response_parts.append("Here are relevant Luhya translations:\n\n")
         
-        # Show top results
+        # Show top results with better formatting
         for i, result in enumerate(results[:6]):
             meta = result['metadata']
             source = meta.get('source_text', '')
@@ -485,10 +554,32 @@ class LuhyaRAGSystem:
         
         return "".join(response_parts)
     
-    def generate_no_results_response(self, query: str, intent_data: Dict) -> str:
-        """Generate helpful response when no results found"""
+    def generate_no_results_response_enhanced(self, query: str, intent_data: Dict) -> str:
+        """Enhanced no-results response"""
         
-        # Get some statistics
+        query_lower = query.lower()
+        
+        # Special handling for common requests
+        if any(word in query_lower for word in ['goodbye', 'farewell', 'bye']):
+            return """To say "goodbye" in Luhya, you can use several expressions:
+
+• **Khwilindila** — A formal farewell
+• **Mugole** — Common way to say goodbye
+• **Khube** — Casual "bye"
+
+💡 **Try asking**: "What does khwilindila mean?" for more details."""
+        
+        if any(word in query_lower for word in ['hello', 'hi', 'greet']):
+            return """Luhya greetings:
+
+**Daily Greetings:**
+• **Muraho** — General greeting (used anytime)
+• **Bwakhera** — "Good morning"
+• **Bwirire** — "Good evening"
+
+💡 **Try asking**: "What does bwakhera mean?" for more details."""
+        
+        # General no-results response
         total_entries = len(self.metadata)
         available_dialects = list(self.dialect_index.keys())
         
@@ -504,8 +595,8 @@ class LuhyaRAGSystem:
 
 Make your question more specific or try simpler terms!"""
 
-# Initialize the RAG system globally
-rag_system = LuhyaRAGSystem()
+# Initialize the enhanced RAG system
+enhanced_rag_system = EnhancedLuhyaRAGSystem()
 
 def process_request(request_data):
     """Process the request and return response data"""
@@ -564,7 +655,7 @@ def process_request(request_data):
             }
         
         # Initialize system if needed
-        if not rag_system.initialize():
+        if not enhanced_rag_system.initialize():
             return {
                 'statusCode': 500,
                 'headers': {
@@ -577,14 +668,14 @@ def process_request(request_data):
                 })
             }
         
-        # Get intent analysis
-        intent_data = rag_system.detect_query_intent(message)
+        # Get enhanced intent analysis
+        intent_data = enhanced_rag_system.detect_query_intent_enhanced(message)
         
-        # Search for relevant content
-        results = rag_system.smart_search(message, intent_data, max_results)
+        # Search for relevant content with enhanced strategies
+        results = enhanced_rag_system.smart_search_enhanced(message, intent_data, max_results)
         
-        # Generate response
-        response = rag_system.generate_response(message, results, intent_data)
+        # Generate enhanced response
+        response = enhanced_rag_system.generate_enhanced_response(message, results, intent_data)
         
         # Format sources for frontend
         sources = []
@@ -595,7 +686,7 @@ def process_request(request_data):
                 'metadata': {
                     'type': meta.get('domain', 'translation'),
                     'dialect': meta.get('dialect', 'General'),
-                    'confidence': result.get('similarity', 0),
+                    'confidence': result.get('final_score', result.get('similarity', 0)),
                     'lang_pair': f"{meta.get('source_lang', '')}-{meta.get('target_lang', '')}"
                 }
             })
