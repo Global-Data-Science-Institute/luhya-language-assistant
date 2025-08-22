@@ -1,0 +1,4502 @@
+[
+  {
+    "source_text": "cud",
+    "target_text": "ikamula",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_0"
+  },
+  {
+    "source_text": "Tutafuata barabara hii pekee.",
+    "target_text": "Khulaloonda busa kumuyila kwong'ene.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_1"
+  },
+  {
+    "source_text": "Watapigishwa taabu kwa miaka mia nne isipokuwa nitaleta mateso kwa nchi ambao watafanyia kama watumwa, kisha baada ya hayo watatoka huko na mali nyingi.",
+    "target_text": "Baliipisibwa siibi khulwe kimiiko chimia chine, ne kakhali ndireera sinyaasio khu sibala nisio balikholela nga banasioobi mala enyuma wako baliruramo ne kimiandu kimikali.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_2"
+  },
+  {
+    "source_text": "Msalabani Yesu alisulubiwa",
+    "target_text": "Kumsalaba Yesu yavambwa,",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_3"
+  },
+  {
+    "source_text": "It may kill one and spare another.",
+    "target_text": "Kwira mulala kwalekha oundi",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "None",
+    "domain": "proverbs",
+    "id": "entry_4"
+  },
+  {
+    "source_text": "abamarachi nabalimi khandi nabaruki.",
+    "target_text": "<sw> wamarachi ni wakulima tena wafugaji.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_5"
+  },
+  {
+    "source_text": "MUMERA NANGWA OWINO ALFRED KHURULA VUKATI.",
+    "target_text": "<sw> KWA MAJINA NAITWA OWINO ALFRED KUTOKA BUKATI.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_6"
+  },
+  {
+    "source_text": "Olitsanga shina?",
+    "target_text": "<en> What are you eating?",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Tsotso",
+    "domain": "translations",
+    "id": "entry_7"
+  },
+  {
+    "source_text": "Ng'ombe ni muhimu sana kwa maisha ya binadamu.",
+    "target_text": "Ing'ombe niindayi muno, khubulamu bua abaandu.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_8"
+  },
+  {
+    "source_text": "ingubo",
+    "target_text": "<en> cloth; garment; dress; ingubo indafu tsererere 'pure white cloth'",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_9"
+  },
+  {
+    "source_text": "But the chief priests stirred up the multitude, that he should rather release Barabbas unto them.",
+    "target_text": "Nebutswa abesaaliisi abakhulundu basema abandu nibabatsuuba mbu, bareebe Pilato abalekhuulile Baraba.",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_10"
+  },
+  {
+    "source_text": "vyahulomaloma nothia mkanisa thirio thisala thia valomalomanga mlumarachi.",
+    "target_text": "<sw> tunavyovizungumza ukienda kanisani kuna sala zinazosemwa kwa lugha ya kimarachi.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_11"
+  },
+  {
+    "source_text": "A spotted cow gives birth to a sported calf. Opili begets Opili",
+    "target_text": "Opili yibula opili",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "None",
+    "domain": "proverbs",
+    "id": "entry_12"
+  },
+  {
+    "source_text": "How was your night/day?",
+    "target_text": "Shiro shawo shivere shirie/Inyanga yawo ivere irie?",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "translations",
+    "id": "entry_13"
+  },
+  {
+    "source_text": "Mtoto akijicha hapo haikuwa rahisi kupatikana",
+    "target_text": ". Mwana ni yivisanga mu si yali anyala kololeka dave.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_14"
+  },
+  {
+    "source_text": "okhulaka",
+    "target_text": "<en> promise",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_15"
+  },
+  {
+    "source_text": "\"Nyasi zimemea karibu na nyumba\".",
+    "target_text": "\"Nyumba yayi nyumbila\".",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_16"
+  },
+  {
+    "source_text": "Hata kwako kikombe kitapita na utalewa hata kuvua nguo ubaki uchi.",
+    "target_text": "Kikombe kilavita kuduka ku ive ulahambika nokuenavula kuva kyahonyo.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_17"
+  },
+  {
+    "source_text": "Abimeleki amii israeli khulwe kimiiko kitaru.",
+    "target_text": "<sw> Abimeleki atawala Israeli kwa miaka mitatu.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_18"
+  },
+  {
+    "source_text": "But he answered and said unto them, An evil and adulterous generation seeketh after a sign; and there shall no sign be given it but the sign of Jonah the prophet:",
+    "target_text": "Nebutswa yabakalusia naboola ari; \"Abolwibulo olubi khandi olwobwilaasi bareebanga mbu baheebwe eshilolelo shiamakana, nebutswa shibalamanyibwa eshilolelo shindi ta, habula eshilolelo shiomulakusi Yona.",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_19"
+  },
+  {
+    "source_text": "Anayekulisha anapiga mamako kama umeketi.",
+    "target_text": "Ukhulisia akhuba mao niwikhale.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_20"
+  },
+  {
+    "source_text": "Serikali yatuliza lirago amaduma gosi agali nigasimikywi mu mirimi gifwe na vatage imwu imbya ya serikali yali ne leti. . .",
+    "target_text": "<sw> Serikali ilitoa amri kwamba mahindi yote ilokuwa imepandwa katika mashamba ing'olewe ili wapende mbegu mpya iliyoletwa na serikali.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_21"
+  },
+  {
+    "source_text": "Aaba ne ali omutaambi anyala aacha khuteekha khu museecha okhasibiikha siilo siosi.",
+    "target_text": "<sw> Alikuwa ni maskini anayeweza akaenda kupika kwa mume asiyeweka usiku wote.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_22"
+  },
+  {
+    "source_text": "Mama nipe mbegu za mkunde niende kupanda.",
+    "target_text": "Mama mbe tsimbindi nzie kumitsa.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_23"
+  },
+  {
+    "source_text": "Esiakela nikhusamba nende matsi kaire ni khuulira amakhuwa ka bandu.",
+    "target_text": "<sw> Kilichofanya nikakuchoma na maji moto ni vile nilipata ujumbe kutoka kwa watu.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_24"
+  },
+  {
+    "source_text": "hen that has hatched out chickens; female goat that has born young",
+    "target_text": "inyafusi",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_25"
+  },
+  {
+    "source_text": "oburecherefu",
+    "target_text": "<en> common sense; intelligence; alertness",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_26"
+  },
+  {
+    "source_text": "Hata hufanya mwewe ushike kuku ili kukula tu firigisi na tuseme tena kuku bila firigisi si kuku.",
+    "target_text": "Kata shikiranga erisimba niritira ingokho rienyanga khuria imondo eyo handi khubole imondo bila mungokho si ne ingokho taa.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_27"
+  },
+  {
+    "source_text": "and brought his head on a platter, and gave it to the damsel; and the damsel gave it to her mother.",
+    "target_text": "nareerera omuruchi nakuchinjile khulutelu nahelesia omukhaana oyo, naye nakuhaana khunyina mwana.",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_28"
+  },
+  {
+    "source_text": "\"nitakuchapa, unafikiri mimi ni rika yako! Tena urudi siku nyingine.\"",
+    "target_text": "ndahuchapa, opalile ndi ilika yao, khaandi okalukhe luundi.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_29"
+  },
+  {
+    "source_text": "become light after rain, at dawn",
+    "target_text": "okhulabukha",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_30"
+  },
+  {
+    "source_text": "Akhaba nasioobi oosalwa mungo, namwe owakulwa ne chirupia, khukhwama khu mureende.",
+    "target_text": "<sw> Hata kama ni watumishi waliozaliwa nyumbani, ama walionunuliwa kwa pesa kutoka kwa wageni.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_31"
+  },
+  {
+    "source_text": "Mayatima na wajane",
+    "target_text": "Avavisandu na vakunzakali,",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_32"
+  },
+  {
+    "source_text": "Yesu yahulila akababoola ne nabakalusia ari, \"Abandu abalamu shibakhaabanga omusilishi ta, habula abalwale nibo abakhaabanga omusilishi.",
+    "target_text": "<en> But when he heard it, he said, They that are whole have no need of a physician, but they that are sick.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_33"
+  },
+  {
+    "source_text": "Ni Yesu,Ni Yesu.",
+    "target_text": "<sw> Ni Yesu,Ni Yesu.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_34"
+  },
+  {
+    "source_text": "-ndi",
+    "target_text": "<en> other; certain; omundu oundi 'someone or other, a certain person'; eshindi shyalo 'another country'",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_35"
+  },
+  {
+    "source_text": "bullock",
+    "target_text": "iyeyi",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_36"
+  },
+  {
+    "source_text": "grudge (see okhubikha likhobo 'bear a grudge')",
+    "target_text": "likhobo",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_37"
+  },
+  {
+    "source_text": "mulwalo",
+    "target_text": "<en> underneath; below; mulwalo we imesa 'under the table'",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_38"
+  },
+  {
+    "source_text": "-chesichesi",
+    "target_text": "<en> cunning (omuchesichesi, abachesichesi, etc.)",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_39"
+  },
+  {
+    "source_text": "anabiimba khukhwama khu murwe khukhwola khu bikele.",
+    "target_text": "<sw> Atanifunika kutoka kwa kichwa kufika kwa miguu.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_40"
+  },
+  {
+    "source_text": "U tsuke mwoyo gugwo kuli amadzi imbiri womumoni mwa Yahova.",
+    "target_text": "<sw> Mimina moyo wako kama maji machoni pa Bwana.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_41"
+  },
+  {
+    "source_text": "Ng'ombe ni kitu cha maana kwa maisha ya mtu.",
+    "target_text": "Ing'ombe ni sindu sia maana khu bulamu bua omundu.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_42"
+  },
+  {
+    "source_text": "Mieri jerimenya lirio jirava mirahi.",
+    "target_text": "<sw> Miezi ya maisha yako itakuwa mizuri.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_43"
+  },
+  {
+    "source_text": "-efu",
+    "target_text": "<en> our (owefu, abefu, eshiefu, etc.)",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_44"
+  },
+  {
+    "source_text": "husk; piece of bran in flour; fragment, e.g. of broken glass",
+    "target_text": "eshiasia",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_45"
+  },
+  {
+    "source_text": "Mana Yesu nareeba eshishieni eshio ari, \"Eliiralio niwe wina?\" Nashio nishimukalusia shiri, \"Nisie Legioni, shichila khuli abanji.\"",
+    "target_text": "<en> And he asked him, What is thy name? And he saith unto him, My name is Legion; for we are many.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_46"
+  },
+  {
+    "source_text": "Ne olwa abeechi bahulila amakhuwa ako, bahuka muno. Ne nibamureeba bari, \"Kho niwiina ounyala okhuhonibwa?\"",
+    "target_text": "<en> And when the disciples heard it, they were astonished exceedingly, saying, Who then can be saved?",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_47"
+  },
+  {
+    "source_text": "Nitawacha nyumba yangu kwa sababu nakupenda.",
+    "target_text": "Nda lekha ingo yanje ndi Shigira nda khu yanza.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_48"
+  },
+  {
+    "source_text": "isiche",
+    "target_text": "<en> locust",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_49"
+  },
+  {
+    "source_text": "encourage",
+    "target_text": "okhutsuuba",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_50"
+  },
+  {
+    "source_text": "okhwabala",
+    "target_text": "<en> drape; wear a cloth draped at the side",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_51"
+  },
+  {
+    "source_text": "tena busia ni kaunti yetu tena kenya ni dunia yetu.",
+    "target_text": "haandi busia ni ikaunti yefu handi kenya ni sialo siefwe.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_52"
+  },
+  {
+    "source_text": "Namwasula imigera kigira ki?",
+    "target_text": "<sw> Mbona mlikataa mito?",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_53"
+  },
+  {
+    "source_text": "Tsidaywa tsibili sitsidekherwangwa mnungiro ndala dawe",
+    "target_text": "<sw> Njogoo wawili huwa hawapikwi katika chungu kimoja",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_54"
+  },
+  {
+    "source_text": "okhukhombola",
+    "target_text": "<en> touch lightly; dig one's finger in with a scooping motion",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_55"
+  },
+  {
+    "source_text": "flock; herd; crowd",
+    "target_text": "lituli",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_56"
+  },
+  {
+    "source_text": "Kuna malaika anatayarisha, makao yenu mbinguni:",
+    "target_text": "Se Ii nengelosi yelilisia, bulili bwene mwigulu:",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_57"
+  },
+  {
+    "source_text": "Khwekhoonyeranga eriseero khukasia ebilaarO:",
+    "target_text": "<sw> Tunatumia ng'ozi kutengeneza viatu.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_58"
+  },
+  {
+    "source_text": "trap; set a trap; catch",
+    "target_text": "okhureka",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_59"
+  },
+  {
+    "source_text": "Ndaria mana ninzia okhubisa italandayo mwiloba. Lola! Italandayo njieyino/",
+    "target_text": "<en> and I was afraid, and went away and hid thy talent in the earth: lo, thou hast thine own.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_60"
+  },
+  {
+    "source_text": "-khulu",
+    "target_text": "<en> old and venerable (compare with okhukofula 'grow old and worn out and be of little use')",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_61"
+  },
+  {
+    "source_text": "Daudi yavanyoola nivasetaa avasigu vaavo",
+    "target_text": "<sw> Daudi aliwapata wakijipanga kukabiliana na adui wao.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_62"
+  },
+  {
+    "source_text": "head; bundle of grass or firewood tied up for carrying on the head; okhubiha omurwe 'be obstinate'; okhufwimbwa omurwe 'be ashamed'",
+    "target_text": "omurwe",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_63"
+  },
+  {
+    "source_text": "talk to oneself; talk nonsense, or boastingly, when others don't want to listen; exaggerate",
+    "target_text": "okhwiliang'aliang'ania",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_64"
+  },
+  {
+    "source_text": "Akhasimba khatseshelela omunyu kukhalunga",
+    "target_text": "<en> The mongoose laughs even when faced with destruction Akhasimba khatseshera omunyu kwakhalunga (TWA163) The mongoose laughed at its destroyer.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "None",
+    "domain": "proverbs",
+    "id": "entry_65"
+  },
+  {
+    "source_text": "Endi owetsinzu tsitaru oba netsinimi tsitaru",
+    "target_text": "<en> To have three houses you need three tongues.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "None",
+    "domain": "proverbs",
+    "id": "entry_66"
+  },
+  {
+    "source_text": "But the Pharisees went out, and took counsel against him, how they might destroy him.",
+    "target_text": "Kho Abafarisayo nibarula musinagogi niberechekha shinga olwa banyala okhwira Yesu. Omukhalabani omulobole wa Nyasaye",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_67"
+  },
+  {
+    "source_text": "Kondoo pia uzuri wake kubwa. Ukimuuza unapata pesa mingi.",
+    "target_text": "Erikondi riosi riri nende bulayi buario busabi. Noolikusia noonyola amapesa masabi.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_68"
+  },
+  {
+    "source_text": "makasi",
+    "target_text": "<sw> Makasi",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_69"
+  },
+  {
+    "source_text": "Wachunga waliona malaika",
+    "target_text": "Lwe tsingelosi va twula mwigulu.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_70"
+  },
+  {
+    "source_text": "Think not that I came to send peace on the earth: I came not to send peace, but a sword.",
+    "target_text": "\"Shimulapaare mbu, ndetsa okhureera omulembe mushialo ta, habula ndetsa okhureera obukabukhani.",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_71"
+  },
+  {
+    "source_text": "But they made light of it, and went their ways, one to his own farm, another to his merchandise;",
+    "target_text": "Nebutswa abacheni abali nibalanjilwe abo nibalateeba omulango okwo ta. Mana nibatsiililila nemilimo chiabwe. Mulala natsia mumukundakwe, oundi khubukhalabwe;",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_72"
+  },
+  {
+    "source_text": "okhunywekha",
+    "target_text": "<en> beat; punish",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_73"
+  },
+  {
+    "source_text": "ehuveresia emirembe mingi mno.",
+    "target_text": "<sw> pokea salamu zangu sana.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_74"
+  },
+  {
+    "source_text": "Tena tabibu huyu alikuwa na mke mmoja aliye na boma lake na mkewe na watoto na wajukuu.",
+    "target_text": "Kandi umbidi uyu yalange umundu wo mkali mulala ovo no mugitsi gwigwe no mkeere wewe na vana, navisukulu.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_75"
+  },
+  {
+    "source_text": "Mtoto mvulana akizaliwa kwa nyumba ngozi ya ngombe ingechukuliwa na kuanikwa juu ya mlango ili yoyote anayepita ajue kwamba mtoto aliyezaliwa ni mvulana, na kama ni mtoto msichana amezaliwa kwa ile nyumba walichukua kata na kufunga kwa mlango ili yeyote anayepita ajue mtoto msichana amezaliwa kwa nyumba ile",
+    "target_text": "Mwana ni yivulangwa mu nyumba naveye muyai vavugulanga kesero cheng'ombe vasunga mu muliango mundu wosi uvita ho amanye mwana wivuliywi munyumba yimu numuyai, na naveye mukana vavugulanga ingata vasunga mu muliango avavita vamanye mwana mukana wivuliywi munyumba yimu vavugulanga ingata vafunga kumuriango vavitanga vamanye ni mwana mkana yivuliywe mu nyuma yimu",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_76"
+  },
+  {
+    "source_text": "168. Ikhabi ishira obukondo (AMI96) Ikhabi ishira obulayi (SOW2) Luck is better than beauty.",
+    "target_text": "Ihonganga eyanyenya",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "None",
+    "domain": "proverbs",
+    "id": "entry_77"
+  },
+  {
+    "source_text": "For this [ointment] might have been sold for much, and given to the poor.",
+    "target_text": "Shichila amafura kano kakhakusiibwe obukusi bweikulu, mana amapesa ako kahebwa abatakha!\"",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_78"
+  },
+  {
+    "source_text": "Na akalipia watenda dhambi deni,",
+    "target_text": "Na a tungira avoni ligovi,",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_79"
+  },
+  {
+    "source_text": "Daudi na mafuta.",
+    "target_text": "Daudi maguta.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_80"
+  },
+  {
+    "source_text": "Lyenya Iyosi lyemihigi li nyoleki lero.",
+    "target_text": "<sw> Leo tumepata tumaini la milele",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_81"
+  },
+  {
+    "source_text": "Yakolanga tsingulu kuduuka m'mbiri gwosi guhia zere.",
+    "target_text": "<sw> Alifanya bidii ili kuhakikisha mwili wote umeungua wote.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_82"
+  },
+  {
+    "source_text": "Kho nibamureeba bari, \"Nobunyali shiina obwokholelanga ebindu bino, noho owakhuhelesia obunyali buno okhukhola bino niwiina?\"",
+    "target_text": "<en> and they said unto him, By what authority doest thou these things? or who gave thee this authority to do these things?",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_83"
+  },
+  {
+    "source_text": "Hapo awali kuku na mwewe walikuwa wanaishi pamoja. Walikuwa wanafanya kazi zao pamoja. Siku moja kuku aliwaangalia watoto wake akaona nywele zao zimekuwa sana, kuku akaangalia atakacho tumia kwanyolea akakosa kupata.",
+    "target_text": "Khale khale ingokho nende liungu bialitsingi biamenya alala. Biakholanga mirimo kiabio alala. Nyanga ndala ingokho yalinga bana bayo bakhulire maswiri sana, ongokho yalinga siokhubekera abana yakhaywa hunyola.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_84"
+  },
+  {
+    "source_text": "Nga Luti aukhana ne Aburamu, wele omunyali owa bioosi aboolela Aburamu ali, ‘'suta chimoni khukhwama niio wimile, mala olole ebunaswa, siafubo, ebukwe ne mumbo.",
+    "target_text": "<sw> Wakati Luti alitengana na Aburahamu, mungu muweza wa vyote alimwambia Aburahamu kuwa ‘' inua macho kutoka ulipo simama kasha utazame kaskazini, kusini, mashariki, na magharibi.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_85"
+  },
+  {
+    "source_text": "okhumanyisia",
+    "target_text": "<en> warn; report; make known",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_86"
+  },
+  {
+    "source_text": "And they reasoned one with another, saying, We have no bread.",
+    "target_text": "Nabo nibachaaka okhuboolelana abeene khu beene bari, \"Shikhulikhwo nemikaate tawe.\"",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_87"
+  },
+  {
+    "source_text": "Hivyo basi akaja mzee mwingine aliyekuwa na nguvu",
+    "target_text": "Kho yeetsaho omukofu undi owali namaani.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_88"
+  },
+  {
+    "source_text": "Gaduukan amagera a dalola",
+    "target_text": "<sw> ……………………………………………",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_89"
+  },
+  {
+    "source_text": "Kwa maana mauguzi yangu ni mengi sana, Na moyo wangu umezimia.",
+    "target_text": "Kigira likenya lyange li gwiye linene, na mwoyo gwange gu duki mbulwaye.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_90"
+  },
+  {
+    "source_text": "Ukipata ugumu kama hauna chumvi unauza tu maziwa naunapata jinsi ya kununua chumvi na ng'ombe atakuwa amekusaidia.",
+    "target_text": "Noonyola budinyu nga obere noobula muunyu nookusia sa mabeere nonyola nga okula munyu ni ing'ombe iba yakhakhukhonya.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_91"
+  },
+  {
+    "source_text": "Tell ye the daughter of Zion, Behold, thy King cometh unto thee, Meek, and riding upon an ass, And upon a colt the foal of an ass.",
+    "target_text": "\"Muboolele abandu ba Zayuni mbu, lole, omuruchi wenywe yetsanga ewa muli. Nomuholo, ne yekhaale khusishili, khushimoosi shieisishili \"",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_92"
+  },
+  {
+    "source_text": "wele akhola kano Nio Abimeleki ne babaandu ba shekemu, babamuramo kumwoyo khukhwira basoleeli ba Gidioni kamakhumi saba, banyoola kumurungo kwe kamamayaanu kabwe.",
+    "target_text": "<sw> mungu alifanya haya Ndipo Abimeleki na watu wa Shekemu, wakampa moyo kuwaua wavulana wa Gidioni sabini, wakapata malipo kwa dhambi zao.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_93"
+  },
+  {
+    "source_text": "Engoka yavolera vaana vatigala na vavegwe mugamba kigira yenyanga itsie kuva henzera chokulia cha hamuglova.",
+    "target_text": "<sw> Kuku aliwaambia waliosalia kuwa watamyolewa keshoye kwa vile alitaka kwenda kuwataftia chakula cha jioni.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_94"
+  },
+  {
+    "source_text": "jump forward, as in a long jump",
+    "target_text": "okhwimitsa",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_95"
+  },
+  {
+    "source_text": "move; move on, or along",
+    "target_text": "okhusikukha",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_96"
+  },
+  {
+    "source_text": "Wakati Mwingine mtoto aliitwa jina lisilo lake na anakuwa vizuri .",
+    "target_text": "Inyinga yiindi mwalanga umwana ilieta litali iliye ma agasa.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_97"
+  },
+  {
+    "source_text": "Hear then ye the parable of the sower.",
+    "target_text": "\"Bulano, rechelesie mumanyilisie eshisina shioluchelo lwomumiitsi.",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_98"
+  },
+  {
+    "source_text": "Tutaona uso wake;",
+    "target_text": "Ku la lola mmoni mwimwe;",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_99"
+  },
+  {
+    "source_text": "Gaali akatoroka kisha Abimeleki akamfuata.",
+    "target_text": "Kaali elukha mala Abimeleki amutimakho.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_100"
+  },
+  {
+    "source_text": "Lwa va hulira va tsia midala,",
+    "target_text": "<sw> Liposikika, habari za mwana",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_101"
+  },
+  {
+    "source_text": "NAENDA MBINGUNI",
+    "target_text": "TSITSANGA MWIGULU",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_102"
+  },
+  {
+    "source_text": "And as they were coming down from the mountain, Jesus commanded them, saying, Tell the vision to no man, until the Son of man be risen from the dead.",
+    "target_text": "Ne olwa bali nibakholomokhanga okhurula khushikulu, Yesu yabakania obutinyu naboola ari, \"Shimulaboolelakhwo omundu yesi yesi lilolelo eliamuluutsi elo ta, okhuula olwa Omwana womundu alaba nalamuushe okhurula mubafu \"",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_103"
+  },
+  {
+    "source_text": "Omuse nomurana",
+    "target_text": "<en> The arena is the testing ground.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "None",
+    "domain": "proverbs",
+    "id": "entry_104"
+  },
+  {
+    "source_text": "Peter began to say unto him, Lo, we have left all, and have followed thee.",
+    "target_text": "Petero nachaaka okhuboolela Yesu ari, \"Lola, khwalekha biosi nikhukhulondakhwo.\"",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_105"
+  },
+  {
+    "source_text": "okhukhongoya",
+    "target_text": "<en> become bigger, larger; increase in size",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_106"
+  },
+  {
+    "source_text": "Ing'ombe ni siruki siri nende bukhonyi bukhongo musialo sinO: Buadodo ingombe ibetsanga mbari ibulao khwakhakosere ebiindu bisabi bilayi.",
+    "target_text": "<sw> Ng'ombe ni mfugo aliye na faida kubwa ulimwenguni humu. Ukweli ng'ombe angekuwa hayupo tungekosa vitu vingi sana.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_107"
+  },
+  {
+    "source_text": "oluchendo",
+    "target_text": "<en> journey; march; walk",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_108"
+  },
+  {
+    "source_text": "Waliokuwa wakimtesa na kumfuata wamemfikia akiwa katika dhiki.",
+    "target_text": "Ava mu dambidza vosi vamunyolera ha lumbatania.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_109"
+  },
+  {
+    "source_text": "Bachama okhwikhala khubifumbi ebilayi, ebieimbeli mutsisinagogi, nende okhulobola habundu aholuyali ahokhwikhala nibali mumasabo.",
+    "target_text": "<en> and chief seats in the synagogues, and chief places at feasts:",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_110"
+  },
+  {
+    "source_text": "Aburahamu akiwa na miaka tisini na tisa, mungu muweza wa vyote alimuonekania kisha akamwambia kuwa, mimi ni mungu muweza wa vyote, tembea mbele yangu kisha usiwe na ubaya wowote utakaofanya unung'unikiwe.",
+    "target_text": "Aburahamu ne ali kimiiko kamakhumi tisa, wele owa bunyali bwoosi amubonekhela mala amuboolela ali, ese ndi wele owe bunyali bwoosi, keenda ebweeni wase mala akhabakho ne liibi liosi liosi likila wekiichibwa tawe.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_111"
+  },
+  {
+    "source_text": "chukua chakula cha watoto na watu ulionao wote",
+    "target_text": "Bukula ebiliibwa biomwana nende ebia abandu boli ninabo boosi.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_112"
+  },
+  {
+    "source_text": "Uliiba",
+    "target_text": "Wiva",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_113"
+  },
+  {
+    "source_text": "ngahuola humuliangilo kwe muisomero huakutana nende avana vaandi nivavayanga lwanyi wo mwisomero.",
+    "target_text": "<sw> tulipofika kwenye lango kuu shuleni tulikutana na wanafunzi wengine wakicheza uwanjani shuleni.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_114"
+  },
+  {
+    "source_text": "Mala Baisiraeli bakhola bumayanu Khu wele omunyali owa bioosi nga barakikha khusaya Baali.",
+    "target_text": "<sw> Kisha waisraeli wakafanya dhambi kwa mungu mweza wa vyote wakati walianza kumwabudu Baali.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_115"
+  },
+  {
+    "source_text": "go uninvited; crash a party",
+    "target_text": "okhwilonderesia",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_116"
+  },
+  {
+    "source_text": "praise, being praised",
+    "target_text": "obupakwi",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_117"
+  },
+  {
+    "source_text": "Nisamehewe.",
+    "target_text": "Nda samefwa bwangu.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_118"
+  },
+  {
+    "source_text": "Katika maisha yake yote atakuwa na majuto.",
+    "target_text": "Mala mu bulamu bwewe bwoosi aliba ne chingunyi chingali.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_119"
+  },
+  {
+    "source_text": "Oriena aah Ominde oriena aee",
+    "target_text": "<sw> Uko wapi aah Ominde uko wapi aee",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_120"
+  },
+  {
+    "source_text": "Khula olole",
+    "target_text": "<en> Grow up and then see.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "None",
+    "domain": "proverbs",
+    "id": "entry_121"
+  },
+  {
+    "source_text": "For this people's heart is waxed gross, And their ears are dull of hearing, And their eyes they have closed; Lest haply they should perceive with their eyes, And hear with their ears, And understand with their heart, And should turn again, And I should heal them.",
+    "target_text": "shichila emioyo chiabwe nemisiro, amarwi kabwe kekaale khandi tsimoni tsiabwe tsiatimba, kho mbu bakhetsukhana nibalola netsimoni tsiabwe, nikahulila namarwi kabwe, ne emioyo chiabwe nichimanyilisia nabo nibangalushila isie, nasi nimbahonia/",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_122"
+  },
+  {
+    "source_text": "weve",
+    "target_text": "<sw> Wake/ Kwake",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_123"
+  },
+  {
+    "source_text": "litofari",
+    "target_text": "<en> brick (<Swahili)",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_124"
+  },
+  {
+    "source_text": "kwetu tumefuga ng'ombe; tuko na shamba ekari ishirini na nusu.",
+    "target_text": "mungo wefu hwaruka thing'ombe; huri nende mukunda thiweka mahumi kaviri nende inusu.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_125"
+  },
+  {
+    "source_text": "Jina lake litukudzwe",
+    "target_text": "Nzidzominyanga lyeta Iilye,",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_126"
+  },
+  {
+    "source_text": "Khuachia mudala bila amani kosikosi hata kidongo dawe.",
+    "target_text": "<sw> Tulikwenda nyumbani bila nguvu hata kidogo.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_127"
+  },
+  {
+    "source_text": "Tuliaharibu kila mji katika eneo la Aroeri karibu na bonde la Arinoni.",
+    "target_text": "Khwonakaka buli lukoba khulukongo lwa Aroeri siimbi ne litooma lia Arinoni.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_128"
+  },
+  {
+    "source_text": "Kegoye vaanyagula vulahi nivanyoola ingavo.",
+    "target_text": "<sw> Kegoye walikimbia vizuri wakashinda ngao.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_129"
+  },
+  {
+    "source_text": "Hakuna yule ambaye anachukia ng'ombe.",
+    "target_text": "Aumao uria washwila ing'ombe.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_130"
+  },
+  {
+    "source_text": "okhwaka",
+    "target_text": "<en> weed with a hoe, etc.; scratch; searify",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_131"
+  },
+  {
+    "source_text": "Bienyekhananga omundu mulala khiria khubera neshindu shitorotoro handi neshititi mno.",
+    "target_text": "<sw> Hutakikana kuliwa na mtu mmoja kwa maana ni kitu nyepesi na kadogo sana.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_132"
+  },
+  {
+    "source_text": "Kali nanyola magelizu gosi",
+    "target_text": "<sw> Hata katika majaribu yake",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_133"
+  },
+  {
+    "source_text": "be fine and soft to the touch, e.g. fine flour; tan leather",
+    "target_text": "okhunyukha",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_134"
+  },
+  {
+    "source_text": "Omusala kukwiranga ouli ahambi",
+    "target_text": "<en> A tree falls on one near it.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "None",
+    "domain": "proverbs",
+    "id": "entry_135"
+  },
+  {
+    "source_text": "Aka murai waende kuchovia na kula asali mtini.",
+    "target_text": "Yaamuvoolera vatsie kulia vwuki kumsala.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_136"
+  },
+  {
+    "source_text": "Ndipo walifuata kwa Ehudi wakashuka kisha wakashika vivuli ambavyo wamoabu walikuwa wameenda kuvukia yordani.",
+    "target_text": "Nio, Baloonda Khu Ehudi bekha mala baamba kamafubukho Niko Bamoabu baba bacha khwambukhilamo yoritani.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_137"
+  },
+  {
+    "source_text": "Kandi vakonyananga muvudinyu vwosi.",
+    "target_text": "<sw> Tena walikuwa wakisaidiana katika shida zote.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_138"
+  },
+  {
+    "source_text": "even so ye also, when ye see all these things, know ye that he is nigh, [even] at the doors.",
+    "target_text": "Kho mwesi olwa mwakhalole ako koosi nikekholekha, nolwa mwakhamanye mbu Kristo ali hambi okhwitsa.",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_139"
+  },
+  {
+    "source_text": "moon; month",
+    "target_text": "omwesi",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_140"
+  },
+  {
+    "source_text": "isulwe",
+    "target_text": "<en> the brightest star appearing in the evening or in the early morning",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_141"
+  },
+  {
+    "source_text": "Sikhusandanga nende khukula imboleya muduka.",
+    "target_text": "<sw> Hatuhangaiki na kununua mbolea dukani",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_142"
+  },
+  {
+    "source_text": "dam water; hush up a matter",
+    "target_text": "okhwikalisia",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_143"
+  },
+  {
+    "source_text": "forge; blacksmith's forge",
+    "target_text": "lirumba",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_144"
+  },
+  {
+    "source_text": "a club; a stout stick",
+    "target_text": "eshikong'o",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_145"
+  },
+  {
+    "source_text": "okhushenya",
+    "target_text": "<en> groan; moan",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_146"
+  },
+  {
+    "source_text": "okhusinya amapwoni",
+    "target_text": "<en> dig up all the potatoes left in a field, leaving it empty and ready for planting another crop",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_147"
+  },
+  {
+    "source_text": "okhusuba",
+    "target_text": "<en> be left out; miss being given",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_148"
+  },
+  {
+    "source_text": "Mungu mweza wa vyote, mungu wako akitaka zingine zozote atasamehewa atafanya kitu chochote hicho sababu kwa kuapa usifanya kazi kwa miaka.",
+    "target_text": "Wele Omunyali Owa Bioosi, Wele wowo alenya kikiindi kiosi kiosi tawe alabeelwa, akhakhole sisiindu esio sikila khu khwechuba khola kimilimo tawe, khulwe kumwiiko.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_149"
+  },
+  {
+    "source_text": "Mchawi ama anamtumikia waliokuwa manabii na uliotoka kwa mungu mweza.",
+    "target_text": "Omubini namwe orumikhira baaba mung'oosi ne bwama khu Wele Omunyali.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_150"
+  },
+  {
+    "source_text": "LISUUVIRA LYOSI NILYANGE",
+    "target_text": "<sw> Imani yoye ni Yangu",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_151"
+  },
+  {
+    "source_text": "ANAKAMUNA NA ANAKANANI (1)",
+    "target_text": "<sw> ANAKAMUNA NA ANAKANANI (1)",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_152"
+  },
+  {
+    "source_text": "Emenyi haliki?",
+    "target_text": "<sw> Anaishi wapi ?",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_153"
+  },
+  {
+    "source_text": "Imboleya eyo notsukha mundalo mana orake madimwa kamera bulayi.",
+    "target_text": "<sw> Mbolea hio ukimwaga katika shamba kisha upande mahindi yanastawi vizuri",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_154"
+  },
+  {
+    "source_text": "okhuosia",
+    "target_text": "<en> lend",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_155"
+  },
+  {
+    "source_text": "Babukula akhaba Luti yesi , omwana owa wandaye owa Aburamu , owaba ne amenyile siimbi Sodoma ne kimiandu kiewe mala barekukha .",
+    "target_text": "<sw> Walimchukua hata Luti pia , mtoto wa ndugu ya Aburamu aliyekuwa akiishi karibu na Sodoma na mali yake kisha wakaondoka .",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_156"
+  },
+  {
+    "source_text": "unripe; green (amachisi, obuchishi, etc.)",
+    "target_text": "-chishi",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_157"
+  },
+  {
+    "source_text": "Unaona lile tawi la ndizi lililonyauka",
+    "target_text": "Ulolaa lirala lira",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_158"
+  },
+  {
+    "source_text": "For whosoever shall do the will of God, the same is my brother, and sister, and mother.",
+    "target_text": "Omundu yesi yesi oukholanga aka Nyasaye yenya, omwenoyo niye omusiani wefwe, omukhaana wefwe, khandi mama wanje.\"",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_159"
+  },
+  {
+    "source_text": "Hutambaa yaliko makazi ya kumbikumbi.",
+    "target_text": "Vulandaa ahekituunda kiveeye.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_160"
+  },
+  {
+    "source_text": "Kumuliango kwa 2.6-16.31 abuundu ano niio enjeko eye sitabu sino.",
+    "target_text": "<sw> mlango wa 2.6- 16.31 mahali hapa ndio nguzo ya kitabu hiki.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_161"
+  },
+  {
+    "source_text": "eshimyu",
+    "target_text": "<en> hot, dry time of year, roughly from the end of November to the middle of February",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_162"
+  },
+  {
+    "source_text": "hold for someone",
+    "target_text": "okhutirira",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_163"
+  },
+  {
+    "source_text": "Hesabu majuma saba",
+    "target_text": "Bala kamachuuma saba",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_164"
+  },
+  {
+    "source_text": "Olwa mrutsi wa sialo siefwe Uhuru Kenyatta yabola mbu bikuli bwiosi bifungwe khubera muyaka kwa korona kulire mu kenya.",
+    "target_text": "<sw> Ambapo Rais wa nchi yetu Uhuru Kenyatta alisema kuwa shule zote zifungwe kwa sababu ugonjwa wa korona umefika Kenya.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_165"
+  },
+  {
+    "source_text": "Jese alitaka kujua jinsi walivyokuwa.",
+    "target_text": "Jese yaali niyenyi amanye kuli vaali nivaaveye",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_166"
+  },
+  {
+    "source_text": "Musa aliona bundi akaickeka.",
+    "target_text": "Musa yalola likuuli naaliseka",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_167"
+  },
+  {
+    "source_text": "okhutendesia",
+    "target_text": "<en> fasten or tie loosely",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_168"
+  },
+  {
+    "source_text": "day",
+    "target_text": "indaalo",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_169"
+  },
+  {
+    "source_text": "Tukalenga nchi ya Wabasha na watu wa nchi hiyo.",
+    "target_text": "Khwaluungikha sibala sia Basha ne babaandu bewe ne sibala esio",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_170"
+  },
+  {
+    "source_text": "And Peter answered, and said unto Jesus, Lord, it is good for us to be here: if thou wilt, I will make here three tabernacles; one for thee, and one for Moses, and one for Elijah.",
+    "target_text": "Mana Petero naboolela Yesu ari, \"Omwami, nobulayi khube hano; nochama lekha enzumbashe hano amatili kataru, elala elilio, elindi elia Musa, nelindi elia Eliya.\"",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_171"
+  },
+  {
+    "source_text": "Noweikhabi omukholi oyo, owomwamiwe achelela ingo nanyoola nakholanga shinga olwa alachilwa.",
+    "target_text": "<en> Blessed is that servant, whom his lord when he cometh shall find so doing.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_172"
+  },
+  {
+    "source_text": "Kho nibamutiila nibamurusia mumukunda kwemitsabibu okwo nibamwiira.\"",
+    "target_text": "<en> And they took him, and cast him forth out of the vineyard, and killed him.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_173"
+  },
+  {
+    "source_text": "And many were gathered together, so that there was no longer room [for them], no, not even about the door: and he spake the word unto them.",
+    "target_text": "Mana abandu abanji nibakhung'anilaho halala, kho mbu obwiyangu shibwalikhwoho kata hamuliango honyene tawe. Naye Yesu yali nabayaalilanga likhuwa lia Nyasaye.",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_174"
+  },
+  {
+    "source_text": "Muhana yebulua yebulukha abulao musiani yabira naye bila humusakula.",
+    "target_text": "<sw> Msichana aliumbwa akaumbika hakuna mvulana angempita bila kumwita.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_175"
+  },
+  {
+    "source_text": "Shule yetu inaitwa Sirikhaya",
+    "target_text": "Sikuli siefu silangwa Sirikhaya.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_176"
+  },
+  {
+    "source_text": "shake, e.g. the head",
+    "target_text": "okhuyuya",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_177"
+  },
+  {
+    "source_text": "breadth (of road, river, ribbon, board, or some object of apparently unlimited length, cf. obuchikha 'breadth of a rectangular object')",
+    "target_text": "obubambalifu",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_178"
+  },
+  {
+    "source_text": "Bi-bi, ikivya cho musungu kegoti - Isindani",
+    "target_text": "<sw> Bi-bi, chuma cha mzungu kimepotea -sindano",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_179"
+  },
+  {
+    "source_text": "Now it came to pass, while the multitude pressed upon him and heard the word of God, that he was standing by the lake of Gennesaret;",
+    "target_text": "Inyanga yindi, olwa Yesu yali nasinjiile khuluchinga lweinyanza ya Genesareti, omukanda omukhongo kwabandu kwali nikumubotokhaane nibarechelesinjia likhuwa lia Nyasaye.",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_180"
+  },
+  {
+    "source_text": "Bamisiri bakhukholela efwe kamabi, Lilaka lie khukhwira Baameleki mala bakhuyingilila khwakhola.",
+    "target_text": "<sw> Wamisri walitufanyia sisi mabaya, uamuzi wa kuuwa waameleki kisha wakatulamisha tukafanya.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_181"
+  },
+  {
+    "source_text": "Waliojitakasa nyoyo zao",
+    "target_text": "Avamali kwogiza myoyo gyavo,",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_182"
+  },
+  {
+    "source_text": "Eng'ereng'ani ikoonyanga mundu kulola mukisundi.",
+    "target_text": "<sw> Nyota humsaidia mtu kuona gizani",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_183"
+  },
+  {
+    "source_text": "Inapatikana katika eneo la Butula mkoa wa Busia",
+    "target_text": "Sinyorekhanga Butula mkaunti ya Busia.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_184"
+  },
+  {
+    "source_text": "Lero ngonanga nenzetegi.",
+    "target_text": "<sw> Siku hizi nalala kama nimechuchumaa.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_185"
+  },
+  {
+    "source_text": "okhutitiya",
+    "target_text": "<en> become smaller; fewer; decrease",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_186"
+  },
+  {
+    "source_text": "Ng'ombe ndume ndiye anastahili kwanza. Kama hauna ng'ombe ndume wewe ni kama uliharibika akili.",
+    "target_text": "Ing'ombe isurusi nio ikhoere mberi. Noobula ing'ombe isurusi yewe aba buongo bwao bwabiiya.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_187"
+  },
+  {
+    "source_text": "Watu wanacheka naye anawaonyesha mihogo -Meno",
+    "target_text": "Vandu vaseka naye avamanyia Miogo -Aminu",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_188"
+  },
+  {
+    "source_text": "Humeda huako sikuli siefu siri nende thibasi thine thibasi ethio thirumikhirwanga mthishughuli thia masomo",
+    "target_text": "<sw> Kuongezea kwa hayo shule yetu ina basi nne na basi hizo hutumika katika shughuli za masomo.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_189"
+  },
+  {
+    "source_text": "Ouloka eshiro alimanyikhana",
+    "target_text": "<en> A night runner will come to be known.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "None",
+    "domain": "proverbs",
+    "id": "entry_190"
+  },
+  {
+    "source_text": "be tamable; respond to soothing influences",
+    "target_text": "okhuhotserekha",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_191"
+  },
+  {
+    "source_text": "Ya gona he tsing'ombe tsi lira Ku",
+    "target_text": "<sw> Kalazwa porini, zizini mwa ng'ombe",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_192"
+  },
+  {
+    "source_text": "Mungu mweza wa vyote akawa akiwafanyia huruma kea machungu na mateso.",
+    "target_text": "Wele omunyali owa bioosi aabakholelaanga siisa mu buchuuni bwabwe ne muminaanio.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_193"
+  },
+  {
+    "source_text": "Mwana wa Mungu mpendwa.",
+    "target_text": "Mwana wa Nyasaye Muderwa;",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_194"
+  },
+  {
+    "source_text": "A la vugula inze.",
+    "target_text": "<sw> Atanichukua.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_195"
+  },
+  {
+    "source_text": "seek; look for",
+    "target_text": "okhukhaba",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_196"
+  },
+  {
+    "source_text": "Kaleefu alikuwa akidhani kuwa ni mchezo kumbe alikuwa anafungua yatakayofanyika kwake kweli.",
+    "target_text": "Paara akoboola. Chelaasia obulayi eshifune shielikhuwa elo noshiili okhuliboola.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_197"
+  },
+  {
+    "source_text": "okhukunukha",
+    "target_text": "<en> fall suddenly into a hole, etc.; doze and fall off the chair, etc.; fall from tiredness",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_198"
+  },
+  {
+    "source_text": "friendship; okhuhambana obwitsa 'become friends'",
+    "target_text": "obwista",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_199"
+  },
+  {
+    "source_text": "Ni mimi kichoma nguo woo ni mimi kichoma nguo",
+    "target_text": "Ninze ingoyi woo,inze ingoyi woo.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_200"
+  },
+  {
+    "source_text": "obukhumi",
+    "target_text": "<en> number; mbolera obukhumi bwabana mwisomero 'tell me the number of children in the school'",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_201"
+  },
+  {
+    "source_text": "okhusitikha",
+    "target_text": "<en> revive; breathe again; come around",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_202"
+  },
+  {
+    "source_text": "come with; bring; nitwitsa mukamba, itsa nende imbako 'when you come tomorrow, bring your hoe'",
+    "target_text": "okhwitsa nende",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_203"
+  },
+  {
+    "source_text": "Efisiriminywi biiranga itaywa",
+    "target_text": "<en> Tiny bugs kill a cock.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "None",
+    "domain": "proverbs",
+    "id": "entry_204"
+  },
+  {
+    "source_text": "cry; weep",
+    "target_text": "okhukhutuuta",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_205"
+  },
+  {
+    "source_text": "Wewe na watoto mpate uponyaji",
+    "target_text": "Ilahonyia ive na vana vovo",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_206"
+  },
+  {
+    "source_text": "Huishi katika mabawa yake",
+    "target_text": "Amenyanga mu vulindi bwe",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_207"
+  },
+  {
+    "source_text": "okhwala",
+    "target_text": "<en> spread; lay; set out; spread out e.g. mat",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_208"
+  },
+  {
+    "source_text": "Anyola buuluukhi ne khukhwima abuundu alala ong'ene.",
+    "target_text": "<sw> Akapata nafuu na kusimama mahali pamoja pekee.'",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_209"
+  },
+  {
+    "source_text": "valimu vali nende mudehi oubadeheranga nende khufulukira vana vusera.",
+    "target_text": "<sw> walimu huwa na mpishi anayewapikia na pia kukoroga uji wa watoto wa chekechea.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_210"
+  },
+  {
+    "source_text": "Ne olwa tsinyangatsie tsiokhukhalabana muhekalu tsiali nitsihwele, Zakaria yarula natsia ingowe.",
+    "target_text": "<en> And it came to pass, when the days of his ministration were fulfilled, he departed unto his house.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_211"
+  },
+  {
+    "source_text": "Liive liamanya niliha engoko logembe.",
+    "target_text": "<sw> Mwewe alimpa kuku wembe.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_212"
+  },
+  {
+    "source_text": "Lieta liomwana uyu Daudi.",
+    "target_text": "<sw> Jina la huyu mtoto ni Daudi.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_213"
+  },
+  {
+    "source_text": "Nitakutingiza",
+    "target_text": "Mangusanguse",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_214"
+  },
+  {
+    "source_text": "65 U la va ha budinyu bwomwoyo, vilaamo vivyo kuvo!",
+    "target_text": "<sw> Weka pazia juu ya mioyo yao, laana yako na iwe juu yao!",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_215"
+  },
+  {
+    "source_text": "Baamba Babaami babili ba Bamidiani Orebu ne Seebu, berera Orebu a luanda lwa Orebu na Seebu niio bakhabasukulilanga endali eya Seebu.",
+    "target_text": "<sw> wakashika wafalme wawili wa wamidiani Orebu na Zeebu, wakaulia Orebu kwa jiwe la Orebu na Seebu ambapo ni shinikozo la divai ya Seebu.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_216"
+  },
+  {
+    "source_text": "Kali tsinyama tsiosi tsingendanga ku lirova",
+    "target_text": "<sw> Wanyama wote hutembea katika ulimwengu huu.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_217"
+  },
+  {
+    "source_text": "Ne Yesu nababoolela ari, \"Shimulamukaanie ta, shichila abulaho omundu yesi yesi oukhola akamangaliimwa muliira lianje, ne niyakhamala okhukakhola, akalukhane habwene nahabwene okhuboola amakhuwa amabi khwisie tawe.",
+    "target_text": "<en> But Jesus said, Forbid him not: for there is no man who shall do a mighty work in my name, and be able quickly to speak evil of me.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_218"
+  },
+  {
+    "source_text": "libatswa",
+    "target_text": "<en> haunch bono",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_219"
+  },
+  {
+    "source_text": "And it came to pass when Jesus had finished commanding his twelve disciples, he departed thence to teach and preach in their cities.",
+    "target_text": "Ne olwa Yesu yali namalile okhuhaana ameechesio ako khubeechibe ekhumi nababili, yarulaho natsia okhwechesia nende okhuyaala mumataala kabwe.",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_220"
+  },
+  {
+    "source_text": "lini",
+    "target_text": "<en> large and deadly snake",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_221"
+  },
+  {
+    "source_text": "Akalelewa, walivyo watoto",
+    "target_text": "Ma ya viruka kuli avana,",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_222"
+  },
+  {
+    "source_text": "Nyote mtubu dhanbi zenu",
+    "target_text": "Mutulizi uvudamanu vwosi,",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_223"
+  },
+  {
+    "source_text": "obuhalabirwi",
+    "target_text": "<en> blame; being blamed",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_224"
+  },
+  {
+    "source_text": "And after these things he went forth, and beheld a publican, named Levi, sitting at the place of toll, and said unto him, Follow me.",
+    "target_text": "01unyuma lwamakhuwa ako, Yesu yarulaho natsia, ne nalola omusololi wobushuru oweliira mbu, Lawi niyekhaale aha basololelanga obushuru. Yesu namuboolela ari, \"Unondekhwo.\"",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_225"
+  },
+  {
+    "source_text": "Yesu u nyanza niye yafwa",
+    "target_text": "<sw> Yesu anipendaye ndiye aliyekufa",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_226"
+  },
+  {
+    "source_text": "Na akitokea kwa mji huo ya kushikilia.",
+    "target_text": "Ne arurire mungo omwo, sie khuambiilila.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_227"
+  },
+  {
+    "source_text": "Hadi wa leo kuku bado huchakurachakura chini akitafuta wembe wa mwewe, naye mwewe huchukua vifaranga wa kuku kwa sababu bado hajapewa wembe wake.",
+    "target_text": "Kuduka na kalunu engoko isagalanga hasi ni yenya logembe Iwe live, ne live livugulanga viminyu vye engoko kigira likikiri kohevwa logembe lwalio.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_228"
+  },
+  {
+    "source_text": "eshiiro",
+    "target_text": "<en> market; marketplace",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_229"
+  },
+  {
+    "source_text": "And when he was accused by the chief priests and elders, he answered nothing.",
+    "target_text": "Ne shiyakalusiakhwo likhuwa khu akabesaaliisi abakhulundu nende khukabakofu bamwinjililakhwo itookho tawe.",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_230"
+  },
+  {
+    "source_text": "huadeha jioni muchele nende idwaya.",
+    "target_text": "<sw> jioni tulipika mchele kwa jogoo.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_231"
+  },
+  {
+    "source_text": "Obulwaye buno bwecha musibala siefwe khurula musyalo sya China.",
+    "target_text": "<sw> Huu ugonjwa ulikuja nchini kwetu kutoka nchi ya China",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_232"
+  },
+  {
+    "source_text": "Lilaang'ana Lia Vandu Mu Vwiiko",
+    "target_text": "<sw> Kuuitana kwa watu wa ukoo",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_233"
+  },
+  {
+    "source_text": "\"Ne wichuba khu Wele Omunyali kambila akhakobola tawe.",
+    "target_text": "<sw> Na ukiapa kwa mungu mwenyezi shauri asirudi.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_234"
+  },
+  {
+    "source_text": "Then come to him the disciples of John, saying, Why do we and the Pharisees fast oft, but thy disciples fast not?",
+    "target_text": "Mana Abeechi ba Yohana omubatiisi nibetsa khu Yesu nibamureeba bari, \"Mbushiina ifwe nende Abafarisayo nikhwiyimanga ebiokhulia khulwa okhusaaya, ne abeechibo nibalakhola bario tawe?\"",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_235"
+  },
+  {
+    "source_text": "Omwana owa olalele wikholelela wamusinga",
+    "target_text": "<en> The child that you will nurse, you first wash him well.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "None",
+    "domain": "proverbs",
+    "id": "entry_236"
+  },
+  {
+    "source_text": "okhukhoyera",
+    "target_text": "<en> deserve; be appropriate to; be fitting for; kahukhoyeere 'it is appropriate for him'",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_237"
+  },
+  {
+    "source_text": "Omuyika mulala shikumala abalayi",
+    "target_text": "<en> All good people cannot die in one year.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "None",
+    "domain": "proverbs",
+    "id": "entry_238"
+  },
+  {
+    "source_text": "omukasa",
+    "target_text": "<en> brass; brass ornaments",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_239"
+  },
+  {
+    "source_text": "Waedomu na wamisiri wanaweza wakaingia akachukia matendo kwa mkusanyiko wa watu.",
+    "target_text": "Baedomu ne Bamisiri banyala bengila abiila bikholwa ebio mu libuusiana lie babaandu.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_240"
+  },
+  {
+    "source_text": "Kutoka kwa bibiye,",
+    "target_text": "Khurula khumukhasi wao,",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_241"
+  },
+  {
+    "source_text": "Onyala wakusia amabeere noonyola tsisende niweekhonyera kata khumeda tsingombe tsindi.",
+    "target_text": "<sw> Unaweza uza maziwa ukapata pesa ukatumia kuongeza ng'ombe wengine.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_242"
+  },
+  {
+    "source_text": "Nano omuruchi wesialo sia Kenya yaamua okhurusia omulango mbu amalwale makhongo keikhoma yesirifu, koolere msialo siefwe sino.",
+    "target_text": "<sw> Hivyo basi rais wa jamhuri ya Kenya aliamua kutoa habari kwamba ugonjwa sugu wa homa ya kifua umewasili katika nchi yetu.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_243"
+  },
+  {
+    "source_text": "Amri ilitolewa, enzi ya mfalme",
+    "target_text": "Kale mmandiku yago munwa gwa twula",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_244"
+  },
+  {
+    "source_text": "Ga duka ndi va validzwa kuva viju vyobudohi, miyinzi gyo mukono gwomulongi.",
+    "target_text": "<sw> Wanavyodhaniwa kuwa vyombo vya udongo, kazi ya mikono ya mfinyanzi.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_245"
+  },
+  {
+    "source_text": "Daudi ndiye aliyepakwa mafuta.",
+    "target_text": "Daudi niyie waavakwa maguta.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_246"
+  },
+  {
+    "source_text": "spit; expectorate",
+    "target_text": "okhunyirikha",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_247"
+  },
+  {
+    "source_text": "Abandu basiange basaba muruke siruki sino mubungi, musiriinde bilayi lukari khuluakhubera siosi ni siruki sia omulongi wefwe yasilonga ni sirukhonyanga likari mu tsishida tsiefwe tsia khunyolanga bikha biosi biosi.",
+    "target_text": "<sw> Watu wangu, nawaomba mfuge mfugo huyu kwa wingi, mmutunze vyema kwa maana yeye pia ni mfugo wa muumba wetu alimuumba na anatusaidia sana kwa shida zetu tunazozikumba wakati wowote",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_248"
+  },
+  {
+    "source_text": "Ing'ombe iruberesianga amaseero. Abaandu bakhanyakhane ing'ombe iumire mubulamu. Abakenya bakheera ing'ombe nga isuna nende huruwi mani khasiwakhakosa ing'ombe mumadala.",
+    "target_text": "<sw> Ng'ombe hutupa ngozi. Watu wangeteseka ng'ombe hangekuwepo maishani. Wakenya wanapenda ng'ombe kama mbu na masikio hivyo hauwezi kosa ng'ombe kwa boma.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_249"
+  },
+  {
+    "source_text": "Ria Wele Omunyali Owa Bioosi, Wele wenywe mala chikhabi chino choosi chilaba chichenywe.",
+    "target_text": "<sw> Ogopa mungu mweza wa vyote, mungu wenu kisha baraka hizi zitakuwa zenu.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_250"
+  },
+  {
+    "source_text": "Olarusia Florence olarusia ifaini x2",
+    "target_text": "<sw> Utatoa Florence utatoa faini x2",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_251"
+  },
+  {
+    "source_text": "Nitali litulitsa vutswa amasu nilio liakolwa.",
+    "target_text": "<sw> Lakini watu kunyoa nywele ndiyo iliyofanyika.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_252"
+  },
+  {
+    "source_text": "okhukushirira",
+    "target_text": "<en> ail; be ill repeatedly",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_253"
+  },
+  {
+    "source_text": "okhuyeya",
+    "target_text": "<en> commit adultery; possibly more accurately, bear an illegitimate child",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_254"
+  },
+  {
+    "source_text": "8 a.m., 9 a.m., late morning",
+    "target_text": "isenya ingali",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_255"
+  },
+  {
+    "source_text": "25 Yahova a veye mulahi kuvo VA mu lindiranga, KU mwoyo gu mwenyanga.",
+    "target_text": "<sw> Bwana ni mwema kwa wale ambao tumaini lao ni kwake, kwa yule ambaye humtafuta.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_256"
+  },
+  {
+    "source_text": "Honor thy father and mother; and, Thou shalt love thy neighbor as thyself.",
+    "target_text": "Helesinjia papawo nende mamawo oluyali; nende okhuheela owashio shinga olwa wiheela omwene.\"",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_257"
+  },
+  {
+    "source_text": "Ye are the salt of the earth: but if the salt have lost its savor, wherewith shall it be salted? it is thenceforth good for nothing, but to be cast out and trodden under foot of men.",
+    "target_text": "\"Inywe muli shinga omunyu kweshialo. Ne omunyu nikuba nikutsinziba, eshiuya shiakwo shinyala okhukalusibwamwo shirie? Shikukaasila eshindu shiosi shiosi khandi ta, habula kusukunwa elwanyi, nende okhusenelwa hasi nabandu.",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_258"
+  },
+  {
+    "source_text": "Mungu muweza wa vyote akamtoa nje kisha akamwambia kuwa, tazama angani kisha uhesabu nyote ikiwa utaweza kuhesabu.",
+    "target_text": "Wele omunyali owa bioosi amurusia enje mala aloma ali lola khwikulu mala obale ching'enieesi, kaba bali onyala khuchibala.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_259"
+  },
+  {
+    "source_text": "habula okhuhendela amakhuwa komushialo, okhuchama obuyinda nende obwikombi bwebindu bindi, binjilanga mubo mana bitiiya likhuwa elo nibilikhola okhulekha okhwama ebiamo.",
+    "target_text": "<en> and the cares of the world, and the deceitfulness of riches, and the lusts of other things entering in, choke the word, and it becometh unfruitful.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_260"
+  },
+  {
+    "source_text": "he shall not honor his father. And ye have made void the word of God because of your tradition.",
+    "target_text": "shiakhoyile okhuhelesia samwana noho nyinamwana oluyali tawe. Kho munjila yino mufukulanga lilako lia Nyasaye khulwa okhuloonda emilukha chienywe abeene.",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_261"
+  },
+  {
+    "source_text": "Bwana ndiye mwenye haki maan nimeiasi amri yake.",
+    "target_text": "18 Yahova nowobulungi kigira inze nzebaaye ku lilaga lilye.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_262"
+  },
+  {
+    "source_text": "Sisera alikuwa amechoka sana usingizi ukamshika.",
+    "target_text": "Sisera aba aluile lukali liilo liamuamba.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_263"
+  },
+  {
+    "source_text": "obushi",
+    "target_text": "<en> honey; lora obushi! 'sweet dreams!'",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_264"
+  },
+  {
+    "source_text": "Mtoto mchanga kuanzia siku moja hadi miezi sita kabla mwingine kuzaliwa walipaswa wajue mtoto huyo akiaga mwili wake uzikwe kabla ya siku mbili kuisha.",
+    "target_text": "Umwana mudoto kutula ku lidiku lilala kuduka mieli sita nakili kulonditswa ku uundi vadukana vamanye umwana uyu nakutsi atagona kavili kulusimbu mba.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_265"
+  },
+  {
+    "source_text": "Ne shiyakalusiakhwo likhuwa khu akabesaaliisi abakhulundu nende khukabakofu bamwinjililakhwo itookho tawe.",
+    "target_text": "<en> And when he was accused by the chief priests and elders, he answered nothing.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_266"
+  },
+  {
+    "source_text": "Abayi nibelukha nibatsia, nibatswania amakhuwa ako mwitookho liosi nende mutsingongo tsirondokhane. Mana abandu nibetsa okhulola mbu nishiina eshiene eshiali nishikholeeshe.",
+    "target_text": "<en> And they that fed them fled, and told it in the city, and in the country. And they came to see what it was that had come to pass.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_267"
+  },
+  {
+    "source_text": "Ndipo aburamu akalala naye kisha akapata mimba.",
+    "target_text": "Nio Aburamu akona naye mala aesia",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_268"
+  },
+  {
+    "source_text": "Kovolerane makuva gege",
+    "target_text": "<sw> Tusemezane ujumbe wake",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_269"
+  },
+  {
+    "source_text": "profit",
+    "target_text": "obukhala",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_270"
+  },
+  {
+    "source_text": "Mlaze pako pema mbinguni",
+    "target_text": "Umuviki halahi hoho mwigulu",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_271"
+  },
+  {
+    "source_text": "Aling'ang'ana na kuvuta.",
+    "target_text": "Yatiika nokhutaanyula",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_272"
+  },
+  {
+    "source_text": "Enzoli yengeta neenene.",
+    "target_text": "<sw> Mbegu hiyo ni kubwa.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_273"
+  },
+  {
+    "source_text": "sikuli siange sili nende abana thimia munane nende kumi na saba (817)",
+    "target_text": "<sw> Shule yangu ina idadi ya wanafunzi mia nane na kumi na saba (817).",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_274"
+  },
+  {
+    "source_text": "Wakuu wake wako kama ayala ambaye hapati malisho, katika udhaifu wamekimbia mbele ya anayewasaka.",
+    "target_text": "Avanene veve vagwiye kuli tsimboongo tsi ta li nekyayiru, na viruki, si va veye netsingulu imbiri wa uyu u va londereranga.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_275"
+  },
+  {
+    "source_text": "fisi na tamaa alichukua na kubugia mara moja.",
+    "target_text": "ifisi nende sionya siavukula nisiefunda lulala.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_276"
+  },
+  {
+    "source_text": "plain; level piece of ground; playing field; etc.",
+    "target_text": "eshikuri",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_277"
+  },
+  {
+    "source_text": "Nio Aburamu aniina khurura mu Misri, niye no mukhasi wewe nende buli siindu nisio aaba nasio alala ne Luti.",
+    "target_text": "<sw> Wakati Aburahamu alipanda kutoka misri, yeye na mke wake na kila kitu alicho kuwa nacho pamoja na Luti.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_278"
+  },
+  {
+    "source_text": "Mwoyo gwigwe gwaliduha ligali nalwayaheenza yigulu yaalola gunani.",
+    "target_text": "<sw> Moyo wake ukasononeka sana na alipoangalia juu, akaona jinni.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_279"
+  },
+  {
+    "source_text": "23. Mke kupiga sehemu nyeti za mumewe.",
+    "target_text": "23. Mukali kukuba mundede yo musatsa.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_280"
+  },
+  {
+    "source_text": "Kho Yesu nabalanga boosi mbu betse ewa yali, nababoolela ari, \"Mumanyile mbu abakhoyile okhuruka Abamahanga, barukanga nibabasitohela, ne abakhongo babwe abo babamanyisinjia mbu, bali nobunyali khubo.",
+    "target_text": "<en> And Jesus called them to him, and saith unto them, Ye know that they who are accounted to rule over the Gentiles lord it over them; and their great ones exercise authority over them.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_281"
+  },
+  {
+    "source_text": "Or how wilt thou say to thy brother, Let me cast out the mote out of thine eye; and lo, the beam is in thine own eye?",
+    "target_text": "Kata wakhaboolela orie owashio mbu, ‘Lekha ekhuyinie akhakokha akhali mumoniyo/ olwa nawe oli neshirundu mumoniyo?",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_282"
+  },
+  {
+    "source_text": "okhwirwatsa",
+    "target_text": "<en> hold forth; preach; make a speech",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_283"
+  },
+  {
+    "source_text": "Akishalewa sana hawataki kulipa karo ya shule hata akiwa mfanyakazi.",
+    "target_text": "Nikhamera muno shenyanga hurunga amatongolo ke sikuli kata nali mukholi we mirimo.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_284"
+  },
+  {
+    "source_text": "Vakalaganga ilise lyo mukivanda ma vasamba umunyu.",
+    "target_text": "<sw> Walikuwa wakikata nyasi zinazopatikana mtoni na kuchoma ili kupata chumvi hiyo ya zamani.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_285"
+  },
+  {
+    "source_text": "lirumba",
+    "target_text": "<en> hump of cow",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_286"
+  },
+  {
+    "source_text": "Tivula mateeva yaga:",
+    "target_text": "<sw> Jibu maswali yafuatayo:",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_287"
+  },
+  {
+    "source_text": "stomach; tripe",
+    "target_text": "lisombo",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_288"
+  },
+  {
+    "source_text": "Ing'ombe niirukibwa yinya ibe nende oburindi bulayi. Okhoyere obe nende lwairo luakana nende tsing'ombe tsia orukire. Tsiosi tsinyikhana tsibe nende abuundu we tsikona, esiduoli.",
+    "target_text": "<sw> Ng'ombe akifugwa anastahili kuwa na ulinzi mzuri. Unafaa uwe na mahali pa kuchunga ng'ombe panapotoshana na ng'ombe ulio fuga. Wote wanafaa wawe na mahali wanapolala, zizini.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_289"
+  },
+  {
+    "source_text": "tread; trample; mix plaster, etc., with the feet",
+    "target_text": "okhuswala",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_290"
+  },
+  {
+    "source_text": "He who knocks is opened for.",
+    "target_text": "Oukhong'onda yekulilwa",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "None",
+    "domain": "proverbs",
+    "id": "entry_291"
+  },
+  {
+    "source_text": "evening; mukoloba muno 'last evening'",
+    "target_text": "mukoloba",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_292"
+  },
+  {
+    "source_text": "Nimekuwa dhihaka kwa watu wangu wote,wimbo wao mchana kutwa.",
+    "target_text": "14 Ngwiye kihenyahenye KU Avandu vange vosi, lwimbu lwavo mbasu Bei.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_293"
+  },
+  {
+    "source_text": "kwa upande wetu watu wengi huzungumza kimarachi kwa sababu wao hujiita wamarachi.",
+    "target_text": "buleka wefwe eno abandu banji balomalomanga lumarachi khubera belanganga bamarachi.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_294"
+  },
+  {
+    "source_text": "Ne olwa Yesu yalola omukanda nikumubotokhaane, yalaka abeechibe okhutsia injelekha weinyanza.",
+    "target_text": "<en> Now when Jesus saw great multitudes about him, he gave commandment to depart unto the other side.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_295"
+  },
+  {
+    "source_text": "Yesu nabareeba ari, \"Bulano mwene mukunda kwemitsabibu olwa yetsa, nishiina eshia alakhola khubalimi abo?\"",
+    "target_text": "<en> When therefore the lord of the vineyard shall come, what will he do unto those husbandmen?",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_296"
+  },
+  {
+    "source_text": "How is it that ye do not perceive that I spake not to you concerning bread? But beware of the leaven of the Pharisees and Sadducees.",
+    "target_text": "Muli murie abalamanyilisinjia mbu shiemboolilenje khukemikaate tawe? Chetsihe khwimela elia Abafarisayo nende elia Abasadukayo!\"",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_297"
+  },
+  {
+    "source_text": "nebutswa niyelukha shichula, nalekha inguboye yeikitani eyo. Yesu ayaasibwa mushiina shiabakofu ba Abayahudi",
+    "target_text": "<en> but he left the linen cloth, and fled naked.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_298"
+  },
+  {
+    "source_text": "I love you in luhya",
+    "target_text": "Ndakhuchama",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "translations",
+    "id": "entry_299"
+  },
+  {
+    "source_text": "Agaveye mu barwa yiyi",
+    "target_text": "<sw> Yaliyomo katika barua hii",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_300"
+  },
+  {
+    "source_text": "Likudumani lyange li tsukeywi ku kivala, kigira ubwoneku bwomukana wavandu vange.",
+    "target_text": "<sw> Ini langu linamiminwa juu ya nchi Kwa uharibifu wa binti ya watu wangu.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_301"
+  },
+  {
+    "source_text": "MUYAKA KWA KORONA KUKHOLERE MALAYI KHUSHIRA MABI.",
+    "target_text": "<sw> UGONJWA WA KORONA UMEFANYA MAZURI KULIKO MABAYA.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_302"
+  },
+  {
+    "source_text": "Walitumia neon \"Mwiko\" kama:",
+    "target_text": "Vatumi kiranga ling'ana \"mujiru\" kuli:",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_303"
+  },
+  {
+    "source_text": "Alipata zimwi hilo na akalikata kwa tumbo Muhonja akatoka ndani akiwa hai",
+    "target_text": "Yanyola gunani yigwo na gotema munda Muhonja natula mu naveye mwoyo",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_304"
+  },
+  {
+    "source_text": "get old; grow old; age; become worn out and be of little use (not a venerable state of old age)",
+    "target_text": "okhukofula",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_305"
+  },
+  {
+    "source_text": "Vaalola avalalu vaavo veere",
+    "target_text": "<sw> Waliona wendawazimu wao pekee",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_306"
+  },
+  {
+    "source_text": "Lisuvira limanyi niligeha",
+    "target_text": "<sw> Hata imani yangu ikififia",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_307"
+  },
+  {
+    "source_text": "Wa kudzera kwosi;",
+    "target_text": "<sw> Ulitufia sote",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_308"
+  },
+  {
+    "source_text": "Akawatangulia watu wa Shekemu kisha apigane na Abimeleki.",
+    "target_text": "kabarangirira babaandu ba shekemu mala apane ne Abimeleki.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_309"
+  },
+  {
+    "source_text": "and then shall appear the sign of the Son of man in heaven: and then shall all the tribes of the earth mourn, and they shall see the Son of man coming on the clouds of heaven with power and great glory.",
+    "target_text": "Mana eshilolelo eshia Omwana womundu shiakhaloleshe hekulu, natsio tsimbia tsiosi tsiabomushialo tsiakhakwe, ne bakhalole Omwana womundu niyetsela mumaleesi komwikulu, mubunyali nende muluyali olukhongo.",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_310"
+  },
+  {
+    "source_text": "And he said unto them, An enemy hath done this. And the servants say unto him, Wilt thou then that we go and gather them up?",
+    "target_text": "Nakalusia naboola ari, 'Omusuku niye owakhola ako/ Nibamureeba bari, 'Wenya mbu khutsie khwiye nikhurusiamwo libanze elo noho?'",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_311"
+  },
+  {
+    "source_text": "Saa",
+    "target_text": "isa",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_312"
+  },
+  {
+    "source_text": "the [son] of Melea, the [son] of Menna, the [son] of Mattatha, the [son] of Nathan, the [son] of David,",
+    "target_text": "Eliakimu yali omwana wa Melea, owali omwana wa Mena, owali omwana wa Matatsa, owali omwana wa Natsani, owali omwana wa Daudi.",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_313"
+  },
+  {
+    "source_text": "eshirima",
+    "target_text": "<en> darkness",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_314"
+  },
+  {
+    "source_text": "omuchimba",
+    "target_text": "<en> rainmaker",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_315"
+  },
+  {
+    "source_text": "And a second like [unto it] is this, Thou shalt love thy neighbor as thyself.",
+    "target_text": "Eliakhabili elili shinga elo ndielino mbu, ‘Oheele owashio shinga olwa wiheela omwene/",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_316"
+  },
+  {
+    "source_text": "Kakhamukasila shiina omundu niyakhenyoolela eshialo shiosi, ne nakosia obulamubwe? Kata shiakhaba shiina eshiomundu yakhahaana khulwa okhuhonia obulamubwe?",
+    "target_text": "<en> For what shall a man be profited, if he shall gain the whole world, and forfeit his life? or what shall a man give in exchange for his life?",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_317"
+  },
+  {
+    "source_text": "And whosoever shall exalt himself shall be humbled; and whosoever shall humble himself shall be exalted.",
+    "target_text": "Omundu yesi owiyemekha omwene alatutuyibwa, naye owitutuyia omwene, alachinguulwa. Yesu asiomela abekaati",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_318"
+  },
+  {
+    "source_text": "Ndanyola bebusi bange nibabarerekho tsibandeji buli abundu.",
+    "target_text": "<sw> Niliwapata wazazi wangu wakiwa wamefungwa bandeji kila sehemu.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_319"
+  },
+  {
+    "source_text": "Kotsa nasuye kohe guga.",
+    "target_text": "<sw> Amu akikataa tumpe babu.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_320"
+  },
+  {
+    "source_text": "Ovuluare runo vuri sa nga myaka.",
+    "target_text": "<sw> Ugonjwa huu ulikuwa tu kama maradhi ya kawaida",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_321"
+  },
+  {
+    "source_text": "Shiendi nobulekhuule khumapesa kanje okhukhola shinga olwa enzenya? Noho okhalishilwe omukongo shichila endi omuhaani?' \"",
+    "target_text": "<en> Is it not lawful for me to do what I will with mine own? or is thine eye evil, because I am good?",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_322"
+  },
+  {
+    "source_text": "okhutembekha",
+    "target_text": "<en> be loose; be relaxed; relax",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_323"
+  },
+  {
+    "source_text": "And behold, Jesus met them, saying, All hail. And they came and took hold of his feet, and worshipped him.",
+    "target_text": "Ne lola, Yesu yabakanila nababoolela ari, \"Omulembe kube ninenywe.\" Nibatsia ahambi ninaye nibamukwa mumakuluke nibamwinamila.",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_324"
+  },
+  {
+    "source_text": "Kila mtu kwa usraeli.",
+    "target_text": "Buli mundu mu Isiraeli.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_325"
+  },
+  {
+    "source_text": "Nobulayi khukutana inawe.",
+    "target_text": "<en> Nice to meet you.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "translations",
+    "id": "entry_326"
+  },
+  {
+    "source_text": "Pesa ngapi?",
+    "target_text": "Amapesa kaanga?",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_327"
+  },
+  {
+    "source_text": "Naye sungura(Topi) aliposonga aliona maindi na na kuni zikiwa zimepangwa. Topi alianza kutamani kukula maindi. Lakini hakujua kuwa huo ulikuwa mtego wa nyani.",
+    "target_text": "Nakho siduyu (Topi) nga khasida khalola madimwa nende tsisala alala nikabungikhwe. Topi yachaka khuekomba huria madimwa. Lakini sisiamanya mbu oko ni mreko kwa lihene.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_328"
+  },
+  {
+    "source_text": "Naye alameda amadanyi.",
+    "target_text": "<sw> Naye atatujaza baraka",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_329"
+  },
+  {
+    "source_text": "endaalo yino olaula sisera.",
+    "target_text": "<sw> siku hii utateka sisera.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_330"
+  },
+  {
+    "source_text": "Niwiyinamo ola yetwa:",
+    "target_text": "<sw> Ukimkubali Yesu utasaidiwa:",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_331"
+  },
+  {
+    "source_text": "burst into speech",
+    "target_text": "okhurumbukha",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_332"
+  },
+  {
+    "source_text": "suspension footbridge of creepers, etc., over a river",
+    "target_text": "omufunje",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_333"
+  },
+  {
+    "source_text": "Ee Bwana, umesikia matukano yao, mashauri yao yote mabaya dhidi yangu.",
+    "target_text": "61 Wa hulira amanyego gavo, O Yahova, na lisaavira lyavo Lya vasaviira ku inze.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_334"
+  },
+  {
+    "source_text": "ally oneself with; come to the help of; range oneself alongside",
+    "target_text": "okhuterera",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_335"
+  },
+  {
+    "source_text": "8 Avatumekiri vamehanga ku kwinye.",
+    "target_text": "<sw> Watumwa wanatutawala.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_336"
+  },
+  {
+    "source_text": "Ee! Ee! Ukoko,Ee! Ee! Ukoko",
+    "target_text": "Ee!ee! kalondo. Ee! Ee! Kalondo",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_337"
+  },
+  {
+    "source_text": "Mana buli mulala khubo yalia niyekura, ne bali abandu abahela ebikhumila bine.",
+    "target_text": "<en> And they ate, and were filled: and they took up, of broken pieces that remained over, seven baskets.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_338"
+  },
+  {
+    "source_text": "mukaunti yefu ya busia vamarachi ni vaangi.",
+    "target_text": "<sw> katika kaunti yetu ya busia wamarachi ni wengi.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_339"
+  },
+  {
+    "source_text": "okhwaluula",
+    "target_text": "<en> remove; take off, of something spread out, as a table-cloth, bed clothes, etc.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_340"
+  },
+  {
+    "source_text": "Ni wimbo tutaimba mbinguni",
+    "target_text": "Lwakulimba mwigulu.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_341"
+  },
+  {
+    "source_text": "Ona lile tawi ndizi lililonyauka",
+    "target_text": "Lola lirere lira",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_342"
+  },
+  {
+    "source_text": "Hao niliowabeba na kuwalea Huyo adui yangu amewamaliza.",
+    "target_text": "Yavo Ava nda lera nokuvirukidza, musigu wange u Mali KU VA heridza.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_343"
+  },
+  {
+    "source_text": "mani rekha haduyu nende ingwe nivathia.",
+    "target_text": "<sw> hivyo sungura na chui walienda.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_344"
+  },
+  {
+    "source_text": "determine; make up your mind to accomplish; put one's heart into s.t.",
+    "target_text": "okhurakho omwoyo",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_345"
+  },
+  {
+    "source_text": "Mugoye gwavohangwa mu kiguti kirahi ahavandu ve tsisoma tsiviri naho tsivaga tsivuganiranga.",
+    "target_text": "<sw> Kamba ilikuwa ikifungwa kwa kiwanja ambacho jamii mbili au tatu zilikutania.O: Naho mwirago he tsisoma tsivuganiranga, sia losoma lwikalanga mu kiduma chavo.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_346"
+  },
+  {
+    "source_text": "umetupatia kila kitu kizuri",
+    "target_text": "Vindu vilahi vyosi vya wa va ha;",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_347"
+  },
+  {
+    "source_text": "Ndipo Gidioni akachukua vyakula vyao wakawa wakienda na tarumbeta,akawaruhusu waende nyumbani kwalo naye akabaki na watu mia tatu hao.",
+    "target_text": "Nio Gidioni abukula biakhulia biabo baaba ne bacha ne chikhoombi, abasibula bache engo wabwe niye aarama nende babaandu chimia chitaru echo.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_348"
+  },
+  {
+    "source_text": "Ye have heard that it was said, Thou shalt love thy neighbor, and hate thine enemy:",
+    "target_text": "\"Mwahulila mbu kaboolwa mbu, ‘Oheele owashio, ne nosila omusukuwo.'",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_349"
+  },
+  {
+    "source_text": "Lea sasa analea.",
+    "target_text": "Lea aleraa lero",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_350"
+  },
+  {
+    "source_text": "green vegetable",
+    "target_text": "tsisaaka",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_351"
+  },
+  {
+    "source_text": "Nashinda tu mtu kumweka mungunmweza wa vyote, mungu tambiko, wote wataenda mahali penu atapanuka nchi yenu,pamoja mbele za mungu na waombezi na akiamini mababu zenu na waamuzi waliokuwa kwa uamuzi muda huo.",
+    "target_text": "khila busa omundu khumuraakho \"Wele Omunyali Owa Bioosi, Wele kumusaango, boombi balacha abuundu wenywe akhabalaaye sibala sienywe, alala ebweeni wa Wele ne basaayi ne aasuubisia bakuuka benywe ne bakhalaki baali mu bukhalaki biise ebio.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_352"
+  },
+  {
+    "source_text": "libubi",
+    "target_text": "<en> spider",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_353"
+  },
+  {
+    "source_text": "Ndio,bado,hatujawai kuona mambo kama haya.",
+    "target_text": "Yee, kukiri, yee, kukiri, kukiri kulola kuyaga,",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_354"
+  },
+  {
+    "source_text": "Akulanga nunu",
+    "target_text": "<sw> Anatuita leo",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_355"
+  },
+  {
+    "source_text": "Hata hivyo ng'ombe anafaa kutunzwa vizuri kwa kumlinda ng'ombe huyo mzuri ni kwa kumweka katika mazingira mazuri, kumpa vyakula maji na kumtazama vyema kwa makini unaweza pata faida kubwa.",
+    "target_text": "Kata kario ing'ombe yenyekhana khurinwa bolayi khurinda ing'ombe eyo bilayi ni khumubikha khabundu alayi. Kuiyeresia biakhulia, matsi nende khumuringa bilayi muno unyala hunyola ifaida ikhongo",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_356"
+  },
+  {
+    "source_text": "one who is rather slow and absent-minded and has to be kept up to date by others",
+    "target_text": "omung'ang'afu",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_357"
+  },
+  {
+    "source_text": "Omurumwa shakhupungwa olukuma",
+    "target_text": "<en> Omurumwa shiyarungwa olukuma (AMI247) A messenger should not be beaten.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "None",
+    "domain": "proverbs",
+    "id": "entry_358"
+  },
+  {
+    "source_text": "omukuru",
+    "target_text": "<en> one of the poles supporting the eaves of the house; veranda post; the space under the eaves (mumukuru)",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_359"
+  },
+  {
+    "source_text": "Siku moja akaamua kwenda vijiji vya mbali kuwatembelea rafikize ili kuwahimiz wafuge mifugo.",
+    "target_text": "Lidiku lirala yeenya kutsia ihale mumadaala kulola avalina veeve kuvavoolera vatuge mitugu.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_360"
+  },
+  {
+    "source_text": "kimarachi ni lugha tunayozungumza sisi wamarachi nyumbani kwetu na nje ya shule.",
+    "target_text": "olumarachi ni inomanoma ya husunganga efwe vamarachi mumadala kefu nende rwanyi wa naisomero.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_361"
+  },
+  {
+    "source_text": "Ingokho ni isolo eya mudala indayi. Ingokho ni bilayi khuba ninayo. Khubeera mukeni niyetsa onyala khumuambira noobula nende esindu siosi siosi. Noori ambi nende ingokho khasookhoyere obe nende budofu khaba.",
+    "target_text": "<sw> Kuku ni mnyama wa nyumbani mzuri. Kuku ni vizuri kuwa naye, kwa sababu mgeni akija unaweza mshikia kama hauna kitu chochote. Ukiwa karibu na kuku haufai kuwa na uvivu kamwe.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_362"
+  },
+  {
+    "source_text": "Sanditsa umukali Kenya.",
+    "target_text": "<sw> Namshukuru Bi. Kenya.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_363"
+  },
+  {
+    "source_text": "Ne imwo eyamiitswa niyikwa khwiloba liokhulwanda, nibo abandu abahulilanga likhuwa, ne bwangu bwene balinjisia mumioyo chiabwe nobusaangaali.",
+    "target_text": "<en> And these in like manner are they that are sown upon the rocky [places], who, when they have heard the word, straightway receive it with joy;",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_364"
+  },
+  {
+    "source_text": "Zamani nyota angeingia nyumbani jioni wakipika ugali na kusema.",
+    "target_text": "Kale Eng. eng'ani yingila ku munyumba hamugolova vudiku nivaluga vukima ma avola",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_365"
+  },
+  {
+    "source_text": "obushindu",
+    "target_text": "<en> cold",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_366"
+  },
+  {
+    "source_text": "-nyiririfu",
+    "target_text": "<en> fine, sleek, smooth, soft",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_367"
+  },
+  {
+    "source_text": "-khulundu",
+    "target_text": "<en> chief, biggest; eldest; senior",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_368"
+  },
+  {
+    "source_text": "okhuyiba",
+    "target_text": "<en> shout angrily",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_369"
+  },
+  {
+    "source_text": "Sisi si wazuri;",
+    "target_text": "Si ku li valahi mba;",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_370"
+  },
+  {
+    "source_text": "And into whatsoever city or village ye shall enter, search out who in it is worthy; and there abide till ye go forth.",
+    "target_text": "\"Ne mwitookho liosi kata mwitaala liosi eliamwinjilamwo mukhabilisiemwo oukhoyele okhumwinjisia, mana mumenye ninaye okhuula olwa murulamwo.",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_371"
+  },
+  {
+    "source_text": "S. Ing'ombe ni isolo indai muno Ikhoyere khuria biakhuria singa obunyasi nende emilabi nende amasakari ka madimwa khalala nende kusie bwa madimwa busierwe.",
+    "target_text": "<sw> Ng'ombe ni mnyama mzuri sana anafaa ale chakula kama vile nyasi na mbegu za viazi vitamu na mtawi ya mahindi pamoja na unga wa mahindi ambao umesagwa.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_372"
+  },
+  {
+    "source_text": "Ne babaandu boosi balikobosia bali kabe kario.\"",
+    "target_text": "<sw> Na watu wote watajibu kuwa yawe hivyo.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_373"
+  },
+  {
+    "source_text": "eshichima",
+    "target_text": "<en> sound; whole",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_374"
+  },
+  {
+    "source_text": "uncover; unveil; take off the lid; undress",
+    "target_text": "okhukunula",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_375"
+  },
+  {
+    "source_text": "Lekha akhole ario, ne baandu babaandi balaulila ako balaria, busa akhola ario eererwa mwiie, mala ne mbao omundu mwinywe olakhola mundu okundi aabukula omukhaana bumayaanu nga obwo burio lundi tawe.",
+    "target_text": "<sw> Wacha afanye hivyo na watu wengine wakisikia hayo wataogopa tu alifanya hivyo akauawa kwa vita tu na mbao mtu kwenu atakayefanya mtu mwingine akachukwa msichana kwa uovu kama huo tena hapana.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_376"
+  },
+  {
+    "source_text": "Anaona ngize mmoja.",
+    "target_text": "Alolaa lidede lira.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_377"
+  },
+  {
+    "source_text": "a wild pig. The domesticated pig is usually called by the Swahili name",
+    "target_text": "imbitsi",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_378"
+  },
+  {
+    "source_text": "nothing is wrong",
+    "target_text": "Shindu ta",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Tsotso",
+    "domain": "translations",
+    "id": "entry_379"
+  },
+  {
+    "source_text": "Wa va kudzera voni,",
+    "target_text": "<sw> Ulifia wenye dhambi",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_380"
+  },
+  {
+    "source_text": "Mumukanda tsana okwo, yalimwo omukhasi undi owali niyerulutsanga khulwa oluhoono lwemiyika ekhumi nachibili.",
+    "target_text": "<en> And a woman, who had an issue of blood twelve years,",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_381"
+  },
+  {
+    "source_text": "Ng'ombe pia anauwezo wa kufanya uwasomeshe watoto shuleni.",
+    "target_text": "Ing'ombe yosi inyala khukira obe nende obunyali bwa khusomia mwana msikuli.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_382"
+  },
+  {
+    "source_text": "Yirana uhe akaana maveere",
+    "target_text": "<sw> Rudi umpe motto maziwa",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_383"
+  },
+  {
+    "source_text": "And when even was come, there came a rich man from Arimathaea, named Joseph, who also himself was Jesus' disciple:",
+    "target_text": "Olwa eshialo bwela, omusaatsa undi omuyinda owokhurula Arimatsaya, oweliira mbu Yosefu, owali khandi omwechi wa Yesu yetsa.",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_384"
+  },
+  {
+    "source_text": "remove; take off, of something spread out, as a table-cloth, bed clothes, etc.",
+    "target_text": "okhwaluula",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_385"
+  },
+  {
+    "source_text": "wanafunzi wengine walisema ati wanajua nami mwalimu aliponiuliza iwapo unajua ukoo wako nikamwuliza ukoo ni nini mwalimu; aliniambia ati wewe hata ukipotea ukitaka usaidizi uulizwe ati nyinyi ni watu wepi utasema nini?",
+    "target_text": "vana vandi vavola vari vamanya nasi mwalimu ngayandeva vari yewe wamanya inono yawo ndamureva vari inono nisina mwalimu yaborera vari yewe kata nokora niwenya vuhonyi nivahureva vari muri bantu sina wolavola vari sina .",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_386"
+  },
+  {
+    "source_text": "Endaalo yino Wele Omunyali Owa bioosi alikho amulaka.",
+    "target_text": "<sw> Siku hii mungu mweza wa vyote yuko anawatuma.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_387"
+  },
+  {
+    "source_text": "Nyota huangaza usiku.",
+    "target_text": "Eng'ereng'ani yaakanga vudiku.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_388"
+  },
+  {
+    "source_text": "Ee!ee! kalondo. Ee! Ee! Kalondo",
+    "target_text": "<sw> Ee! Ee! Ukoko,Ee! Ee! Ukoko",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_389"
+  },
+  {
+    "source_text": "okhusera",
+    "target_text": "<en> attack; make war. Usually followed by the word lihe.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_390"
+  },
+  {
+    "source_text": "saying, I have sinned in that I betrayed innocent blood. But they said, What is that to us? see thou [to it] .",
+    "target_text": "Nababoolela mbu, \"Enzonoonile okhukhoba omundu oubula eshikha mbu yerwe!\" Nibamukalusia bari, \"Ifwe nefu khuteeba shiina khukenako? Ako kali khwiwe omwene!\"",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_391"
+  },
+  {
+    "source_text": "01wibulo luno olumayanu olubula obusuubili mu Nyasaye! Muureebanga eshilolelo? Tawe! Shimulahebwa eshilolelo shindi ta, habula eshilolelo shia Yona shionyene.\" Mana nabarulakhwo niyenyokha. Limela elia Abafarisayo nende elia Abasadukayo",
+    "target_text": "<en> An evil and adulterous generation seeketh after a sign; and there shall no sign be given unto it, but the sign of Jonah. And he left them, and departed.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_392"
+  },
+  {
+    "source_text": "Aakholile ario khu lukeendo lwenye lwoosi khukhwola abuundu ne amulaka bakuuka benywe bakharia, namwe mwarangararwa.",
+    "target_text": "<sw> Amefanya hivyo kwa safari yenu yote kufika mahali na akawahidi mababu zenu wasiogope ama kuchokozwa.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_393"
+  },
+  {
+    "source_text": "akhamuna",
+    "target_text": "<en> ground squirrel; hero of many folk tales; Sungura 'the hare' of Swahili tales; called Anakhamuna in stories and speaks with a lisp (see also eshimuna)",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_394"
+  },
+  {
+    "source_text": "Omwana wamberi neshikhoyero",
+    "target_text": "<en> The first born child is a source of joy.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "None",
+    "domain": "proverbs",
+    "id": "entry_395"
+  },
+  {
+    "source_text": "Kwa mapenzi yako unikubali",
+    "target_text": "Nuyanza unzingirizi.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_396"
+  },
+  {
+    "source_text": "walk swayingly; wind in and out; follow a zigzag course; swerve from side to side, as a river, or a snake",
+    "target_text": "okhwikotiombola",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_397"
+  },
+  {
+    "source_text": "Ouliriranga endiena?",
+    "target_text": "<en> How are you feeling?",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Tsotso",
+    "domain": "translations",
+    "id": "entry_398"
+  },
+  {
+    "source_text": "Ne babaandu boosi balikobosia bali \"Kabe kario.",
+    "target_text": "<sw> Na watu wote watajibu kuwa yawe hivyo.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_399"
+  },
+  {
+    "source_text": "Muhonyi Yesu yaza mulilova",
+    "target_text": "<sw> Yesu atarudi duniani",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_400"
+  },
+  {
+    "source_text": "Sitabu sie Likhebulila silimo kamakhuwa kamakali niko Musa aaboolela babaandu ba Isiraeli.",
+    "target_text": "<sw> KItabu cha Kumbukumbu kinayo mambo mengi ambayo Musa aliwaambia wana Waisraeli.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_401"
+  },
+  {
+    "source_text": "Yesu mponyaji,",
+    "target_text": "Yesu Muhonnyi,",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_402"
+  },
+  {
+    "source_text": "river; creek; stream",
+    "target_text": "omwalo",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_403"
+  },
+  {
+    "source_text": "giraffe (can graze on the branches of the murumba tree)",
+    "target_text": "inzaya murumba",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_404"
+  },
+  {
+    "source_text": "separate; come apart",
+    "target_text": "okhukabukhana",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_405"
+  },
+  {
+    "source_text": "sikuli syefwe siri nende ibendera.",
+    "target_text": "<sw> shule yetu ina bendera.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_406"
+  },
+  {
+    "source_text": "Akamwita yule kijana akaja, kijana akawambia yule mzee wa kijiji amwache yeye na maisha yake afanye anayoyafanya",
+    "target_text": "Naye amlanga na athia, msiani yaborera mukuru mbu amlehe nende maisha kaye akhole vyakhola.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_407"
+  },
+  {
+    "source_text": "Nebutswa isie emuboolela mbu, Eliya oyo yamala okhwitsa, ne abandu bamukholela koosi kabeene balola mbu namalayi okhumukholela, shinga olwa Amahandiko kahandikwa khuye Yesu ahonia omusiani owali neshishieno",
+    "target_text": "<en> But I say unto you, that Elijah is come, and they have also done unto him whatsoever they would, even as it is written of him.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_408"
+  },
+  {
+    "source_text": "saying, The scribes and the Pharisees sit on Moses seat:",
+    "target_text": "\"Abahandichi bamalako nende Abafarisayo nibo abali nobunyali bwokhwinoosia amalako ka Musa.",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_409"
+  },
+  {
+    "source_text": "Na musatsa wayagenda naye kandi malala mele siasila muvosee naho kulia ku inyama yiyi naho kuvitila mu masahi yaga mba.",
+    "target_text": "<sw> Yule mwanaume aliyeshiriki naye uzinzi vilevile hangekaribia lile kaburi ama kula nyama hiyo ama pia kupitia kwa ile damu",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_410"
+  },
+  {
+    "source_text": "\"Nasioobi aaba ne elukha khumulaama enywe.",
+    "target_text": "<sw> Mtumwa alikuwa akitoroka kumlaani nyinyi.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_411"
+  },
+  {
+    "source_text": "For narrow is the gate, and straitened the way, that leadeth unto life, and few are they that find it.",
+    "target_text": "Nebutswa omuliango okwinjila mubulamu bwobumeli neshinyelele, khandi omuhanda kwokhutsiayo nomunyelele; ne abaloondakhwo nibatiiti. Omusaala nende ebiamo biakwo",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_412"
+  },
+  {
+    "source_text": "Binadamu ni silongi sia Nyasaye. Ari nende bulayi khushira esindu siosi siosi khusialo khuno. Binadamu ni silongi silayi khua khubera Nyasaye yasilonga khumikhono kiaye mungira ikabukhane.",
+    "target_text": "<sw> Binadamu ni kiumbe cha Mungu. Anaumuhimu kuliko kitu chochote ulimwenguni humu. Binadamu ni kiumbe kizuri kwa sababu Mungu alimuumba kwa mikono yake kwa njia tofauti",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_413"
+  },
+  {
+    "source_text": "Ni kitu gani hukusasidia kuona gizani?",
+    "target_text": "Nikinduki kikukoonyaa kulola mukisundi?",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_414"
+  },
+  {
+    "source_text": "olusyani",
+    "target_text": "<en> boyhood; characteristics and attributes of boyhood",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_415"
+  },
+  {
+    "source_text": "okhulakakha",
+    "target_text": "<en> drop",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_416"
+  },
+  {
+    "source_text": "be thankful; rejoice, with thankfulness to the one who has caused the rejoicing",
+    "target_text": "okhwishia",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_417"
+  },
+  {
+    "source_text": "But the things which proceed out of the mouth come forth out of the heart; and they defile the man.",
+    "target_text": "Nebutswa akarulanga mumunwa kabetsanga nikarulile mumwoyo, nako niko akafwabinjia omundu.",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_418"
+  },
+  {
+    "source_text": "Nombiri",
+    "target_text": "<sw> Utanipeleka.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_419"
+  },
+  {
+    "source_text": "S. Abandu bakusingia ing'ombe banyole olwa basomia abana babo.",
+    "target_text": "<sw> Watu huuza ng'ombe ili wapate jinsi ya kuwapeleka wanawo shuleni.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_420"
+  },
+  {
+    "source_text": "O: ING'OMBE",
+    "target_text": "<sw> NG'OMBE",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_421"
+  },
+  {
+    "source_text": "\"Nio naruma barume khukhwama mu leaba ne abalaka.",
+    "target_text": "<sw> Ndiposa wakatuma watumwa kutoka Leaba na Abalaka.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_422"
+  },
+  {
+    "source_text": "Lwa va menyanga yeyo Yesu yivulwa.",
+    "target_text": "<sw> Huko walikoishi kazaliwa Yesu",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_423"
+  },
+  {
+    "source_text": "Ya kudzira avoni.",
+    "target_text": "<sw> Alikufa kwa sababu ya wenye dhambi",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_424"
+  },
+  {
+    "source_text": "imbolo",
+    "target_text": "<en> penis",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_425"
+  },
+  {
+    "source_text": "Utaona mudomo",
+    "target_text": "Ulalola munwa.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_426"
+  },
+  {
+    "source_text": "lundi Wele wefwe ne alomaloma Alanyoola sikelo sie siakhulia silekhaana namwe mubone na nga sie basaayi babaandi lundi alatasa kumulilo kwewe kumukali tawe, busa khu nibio anyoola khukhwama engo khukhola khurio khwafwa!'",
+    "target_text": "<sw> Tena mungu wetu akizungumza atapata kipimo cha chakula kinachotoshana ama muone jinsi waombezi wengine tena hataongeza moto wake mwingi, bure kwa ambavyo anapata kutoka nyumbani tanaweza fanya hivyo tukafa!",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_427"
+  },
+  {
+    "source_text": "Khukhwama abwenao aacha mu sibala sie bikulu ebukwe wa Beteli,mala ombakha liiema liewe akari wa Beteli, lubeka lwe mumbo ne lukoba lwa Ai,ebukwe . Ne, abweneo ombakhila Wele Omunyali Owa Bioosi alutare mala amwesaaya.",
+    "target_text": "<sw> Kutoka hapo akaenda nch ya mashariki mwa Betheli akajenga hema katikati mwa Betheli, upande wa magharibi mwa jamii ya mashariki. Hapo akamjengea mungu mweza yote.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_428"
+  },
+  {
+    "source_text": "Huu korona hauna dawa yake.",
+    "target_text": "Korona buno vuvula musala kwaye.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_429"
+  },
+  {
+    "source_text": "Nashoni yali omwana wa Aminadabu, owali omwana wa Adimini, owali omusaini wa Arini, owali omwana wa Hezironi, owali omwana wa Faresi, owali omwana wa Yuda.",
+    "target_text": "<en> the [son] of Amminadab, the [son] of Arni, the [son] of Hezron, the [son] of Perez, the [son] of Judah,",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_430"
+  },
+  {
+    "source_text": "Mungu hupenda wanaokiri",
+    "target_text": "Yahova ayazanga veyamanga",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_431"
+  },
+  {
+    "source_text": "anger; bitter disappointment or grief; e.g. of a bereaved person",
+    "target_text": "oburuma",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_432"
+  },
+  {
+    "source_text": "Mana khunyanga yomunane, nibetsa okhusheba omwana tsana. Ne bali nibenya okhumukulikha eliira lia samwana mbu, Zakaria.",
+    "target_text": "<en> And it came to pass on the eighth day, that they came to circumcise the child; and they would have called him Zacharias, after the name of the father.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_433"
+  },
+  {
+    "source_text": "OMbiri",
+    "target_text": "<sw> Mwili",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_434"
+  },
+  {
+    "source_text": "God helps he who helps himself.",
+    "target_text": "Nyasaye akhonya owikhonya",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "None",
+    "domain": "proverbs",
+    "id": "entry_435"
+  },
+  {
+    "source_text": "okhwanzushira",
+    "target_text": "<en> neglect someone or something",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_436"
+  },
+  {
+    "source_text": "Babemeleesi be chikholo bano, becha e kanaani khukhwama siise nisio baisiraeli barakikhira khukhwaamiia sibala esio khukhwola siise nisio banyoolelamo omwami owe khunyoa ( wakana kumwiiko kwe eleefu ndala ne chimia chibili nendeeleefu ndala).",
+    "target_text": "<sw> Wasimamizi wa koo hizi, walikucha kanaani kutoka wakati ambao waisraeli walianza kuhamia nchi hiyo kufika wakati wakati ambao walipata mfalme wa kwanza (labda mwaka wa elfu moja na mia mbili na elfu moja).",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_437"
+  },
+  {
+    "source_text": "Buli akhashere nobufila bwakho",
+    "target_text": "<en> Buli khashere nobusiba (obufira) bwakho (DWA153) Buli lishere nobufira bwalio (AMI35) Every frog has its peculiar poison.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "None",
+    "domain": "proverbs",
+    "id": "entry_438"
+  },
+  {
+    "source_text": "Whosoever therefore shall humble himself as this little child, the same is the greatest in the kingdom of heaven.",
+    "target_text": "Omundu yesi owitutuyia shinga omwana omutiiti uno, omwenoyo nomukhongo muno mubwami bwa Nyasaye.",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_439"
+  },
+  {
+    "source_text": "soften; make thin, weak, weary, etc.",
+    "target_text": "okhutosia",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_440"
+  },
+  {
+    "source_text": "Obuheendi nende oburima obwalinji muye khale bwabwakho buli olucheendo olwabasamulanga Leya yanyoolanga Roda niyerecheshe nende ebindubie biosi namulindanga.",
+    "target_text": "<sw> Wasiwasi na hasira ambao ulikuwa kwake kitambo uliokuwa katika kila safari waliokuwa wakisafiri Leya alikuwa anamkuta Roda akiwa tayari na vitu vyake akimngoja.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_441"
+  },
+  {
+    "source_text": "niwenya mapesa mulumarachi babolanga mbu amatongolo.",
+    "target_text": "<sw> ukitaka pesa kwa kimarachi watu husema ati pesa [matongolo]",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_442"
+  },
+  {
+    "source_text": "eshisungu",
+    "target_text": "<en> in European manner",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_443"
+  },
+  {
+    "source_text": "13 Kunangwa kuvugana na ya mu volera, Sisera ya vungidza magari gege gosi Hamba, nda ku mannya mundu wa halala , amagari tsimia tsitano na wenyangaa",
+    "target_text": "<sw> Ndiposa washirikiane naye, alimwambia Sisera akaya kusanya magari yake yote njoo, ntakuonyesha mtu pamoja na magari elfu tano kama unataka",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_444"
+  },
+  {
+    "source_text": "Nuvulahi umbe tsingulu tsiokwita musigu wiitu.\"",
+    "target_text": "<sw> Ni vizuri unipe nguvu za kuua huyu adui wetu.\"",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_445"
+  },
+  {
+    "source_text": "Mungu mweza wa vyote kisha mkasema kuwa, wacha tutume kila mara akawa akiwatangulia mbele, watu mbele yetu waende wapeleleze kwa barabara mahali ambapo mnafanya nchi ambayo walituambia njia nzuri kambi na kuonyesha nyinyi njia.",
+    "target_text": "Wele Omunyali Owa Bioosi mala mwaloma muli, 'Lekha khurume buli lwosi amurangiriranga ebweeni, babaandu ebweeni wefwe bache bayoote khumuyiimila abuundu niio mukhola sibala nio bakhuboolele engila endayi ekambi ne khumwekesia enywe engila.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_446"
+  },
+  {
+    "source_text": "Avaveye ne vigulu mukivala kyavo vadukana vasanditsi Nyasaye na vamanye ikivu vigulu.",
+    "target_text": "<sw> Walio na milima nchini mwao wanapaswa kushukuru Mungu na wajue",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_447"
+  },
+  {
+    "source_text": "Nuwingira msikuli sya Sirikhaya, manya mbu ori avundu alai wa masomo kali bilai nende siwango sya akulu.",
+    "target_text": "<sw> Ukiingia kwenye shule ya Sirikhaya, jua kwamba uko pahali pazuri pa masomo yaliyo ya hali ya juu.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_448"
+  },
+  {
+    "source_text": "May God protect you",
+    "target_text": "Nyasaye akhulinde.",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "translations",
+    "id": "entry_449"
+  },
+  {
+    "source_text": "Then saith he to his servants, The wedding is ready, but they that were bidden were not worthy.",
+    "target_text": "Mana naboolela abakholibe ari, ‘Lisabo lieshiselelo lirechekhwe, nebutswa abacheni abalangwa shibaliteebile eshindu ta.",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_450"
+  },
+  {
+    "source_text": "okhurema olulikho",
+    "target_text": "<en> shake shoulders in dancing",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_451"
+  },
+  {
+    "source_text": "Orio sana mukhongo.",
+    "target_text": "<en> Really appreciate it Boss",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "translations",
+    "id": "entry_452"
+  },
+  {
+    "source_text": "Butaambi mala chinganakani chewe choosi chili khu rupia echo.",
+    "target_text": "<sw> Umaskini kisha mawazo yake yote yako kwa pesa hizo.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_453"
+  },
+  {
+    "source_text": "Omukhulundu muami Uhuru nainia maoni kaye yabola mbu bulwaye buna bwa korona bwira bwangu sana.",
+    "target_text": "<sw> Rais Uhuru alitoa maoni yake akasema kwamba ugonjwa huu wa korona unaua watu haraka sana.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_454"
+  },
+  {
+    "source_text": "1. Kukata ndizi kwa kutumia shoka.",
+    "target_text": "1. Kotema ligomia nimbatsi..",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_455"
+  },
+  {
+    "source_text": "Eshishio shikhumala amahofu",
+    "target_text": "<en> You long for yours",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "None",
+    "domain": "proverbs",
+    "id": "entry_456"
+  },
+  {
+    "source_text": "Ku musala yigu, Nda va weligali,",
+    "target_text": "<sw> Kwenye msalaba huu, nitakuwa mwaminifu",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_457"
+  },
+  {
+    "source_text": "Olanyola abandu bangi bajama einyama eya ing'ombe.",
+    "target_text": "<sw> Utakuta watu wengi wanapenda nyama ya ng'ombe.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_458"
+  },
+  {
+    "source_text": "Anaona ile sinia moja.",
+    "target_text": "Alolaa luderu lulala lula",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_459"
+  },
+  {
+    "source_text": "aliraa",
+    "target_text": "<sw> Analia",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_460"
+  },
+  {
+    "source_text": "Kifuniko cha mjane kama cha mmoja kwa waliokufa wakiwa hawajazaa hatushikilii malipo.",
+    "target_text": "sibiimbilo sia namulekhwa nga sie mulala khu nibo afwa ne akhasaala khuambiilila kumuruungo tawe.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_461"
+  },
+  {
+    "source_text": "omushingachi",
+    "target_text": "<en> doorstep; piece of wood or low bank of clay in doorway to stop water from flowing into the house after rain",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_462"
+  },
+  {
+    "source_text": "Walipika debe nyingi",
+    "target_text": "Vadeka madede na madeede",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_463"
+  },
+  {
+    "source_text": "Okhuba lihanga liakhalwane nende lihanga lindi, khandi oburuchi, bwakhalwane nende oburuchi bundi. Okhurenga khweshialo okhukhongo khwakhabeho mubialo ebiahukhane, inzala nayo yakhabeho, ne ako koosi kakhabe shinga obuchaachilo bwomukhasi oulumwa inzibula.",
+    "target_text": "<en> For nation shall rise against nation, and kingdom against kingdom; there shall be earthquakes in divers places; there shall be famines: these things are the beginning of travail.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_464"
+  },
+  {
+    "source_text": "Kulikuwepo na maombi kabisa vile mimi niliamka mama kwa roho",
+    "target_text": "Lya li ho Lisaavira Ligali Lye Lwa inzenda vuka, mama mu myoyo.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_465"
+  },
+  {
+    "source_text": "Binamu ni mtoto wa shangazi yako _huyu ni mtoto wa dada wenye.(",
+    "target_text": "Musiara uyu ni mwana wa senge wovo Mwifa uyu ni mwana wo mkana winyu. ( Mama mamako)",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_466"
+  },
+  {
+    "source_text": "inzala ya choka",
+    "target_text": "<en> the drought of 1908, when a rainmaker named Choka, or Odongo, was killed for not bringing rain",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_467"
+  },
+  {
+    "source_text": "Mu madiku ga Jaeli, tsinzira",
+    "target_text": "<sw> Kwa siku za Jaeli, njia",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_468"
+  },
+  {
+    "source_text": "wonderful, strange, queer, or remarkable happenings (see also amangalimwa)",
+    "target_text": "amakana",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_469"
+  },
+  {
+    "source_text": "Avaana yavo vigereritsa muliru kudukanivalola muduya niguhiiye.",
+    "target_text": "<sw> Watoto hao walisongeza moto hadi maharagwe yakaiva",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_470"
+  },
+  {
+    "source_text": "Adukana ave ne imbago indahi yokulima (utali ikitsili)",
+    "target_text": "<sw> Yafaa awe na jembe nzuri ya kulima (asiwe",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_471"
+  },
+  {
+    "source_text": "\"Nafula yali yaria imbako. Leelo yomilanila okhulima.",
+    "target_text": "<sw> Nafula alikuwa ameogopa jembe siku hizi amekazana na ukulima",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_472"
+  },
+  {
+    "source_text": "Kama njiwa atawale",
+    "target_text": "Na kuli likulu.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_473"
+  },
+  {
+    "source_text": "Li leminya myoyo:",
+    "target_text": "<sw> Latulita nyoyo",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_474"
+  },
+  {
+    "source_text": "Daudi aliwapata wakijipanga kukabiliana na adui wao.",
+    "target_text": "Daudi yavanyoola nivasetaa avasigu vaavo",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_475"
+  },
+  {
+    "source_text": "large brown bird whose note resembles water coming out of a bottle; Burchell's Coucal",
+    "target_text": "lititwi",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_476"
+  },
+  {
+    "source_text": "Paka alikuwa akinihadaa.",
+    "target_text": "Lwali lugano lwa changuba",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_477"
+  },
+  {
+    "source_text": "omurengo",
+    "target_text": "<en> fever, usually malaria",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_478"
+  },
+  {
+    "source_text": "Nebutswa abesaaliisi abakhulundu basema abandu nibabatsuuba mbu, bareebe Pilato abalekhuulile Baraba.",
+    "target_text": "<en> But the chief priests stirred up the multitude, that he should rather release Barabbas unto them.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_479"
+  },
+  {
+    "source_text": "one cob of maize",
+    "target_text": "lituuma",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_480"
+  },
+  {
+    "source_text": "Mama aliinjika maharagwe kwa meko na akawaambia watoto wake moto ili yaive",
+    "target_text": "Mukeere uyo yaviika muduya kumahiga nayavoolera avaana veeve kwigereritsa muliru.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_481"
+  },
+  {
+    "source_text": "Moreover when ye fast, be not, as the hypocrites, of a sad countenance: for they disfigure their faces, that they may be seen of men to fast. Verily I say unto you, They have received their reward.",
+    "target_text": "\"Khandi olwa mwiyima eshiokhulia khulwokhusaaya, mulakhuunia mumoni shinga olwa abekaati bakholanga ta, okhuba babiyinjia mumoni kho mbu, abandu balole mbu beyimile eshiokhulia khulwokhusaaya. Emuboolela toto mbu, bamala okhunyoola omurungo kwabwe.",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_482"
+  },
+  {
+    "source_text": "Ng'ombe ni kitu ambacho watu wanapenda kwa manaa ng'ombe ana faida mingi sana kwa watu. Watu wanampenda kwa maana wanajua kile wanachokipata kutoka kwake. Ng'ombe ni kitu mzuri sana.",
+    "target_text": "Ing'ombe ni sindu esia abandu bajama sana khubeera ing'ombe iri nende manufaa masabi lukari khubandu. Baandu baijama khuluobera bamanya sindu sia bainyolangakhO: Ing'ombe ni sindu silayi lukari.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_483"
+  },
+  {
+    "source_text": "Kwenye huo msalaba, damu ilimwagika",
+    "target_text": "Ku muala yigu, Magahi ga tadza,",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_484"
+  },
+  {
+    "source_text": "Musa elamo kamalaka likhumi ne aloma lukali khu sifuno sie lilaka lie khunyoa.",
+    "target_text": "<sw> Musa akarejela amri kumi na kuzungumzia lengo la amri ya kwaza.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_485"
+  },
+  {
+    "source_text": "Tuliwapoteza watu wengi wakubwa waliokuwa wazuri Kenya.",
+    "target_text": "Bungi khwakosia bandu bakhongo balayi mkenya.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_486"
+  },
+  {
+    "source_text": "The person who has tasted it is the one who may praise it.",
+    "target_text": "Oushililekhwo niye oushitsomia",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "None",
+    "domain": "proverbs",
+    "id": "entry_487"
+  },
+  {
+    "source_text": "omukali",
+    "target_text": "<en> servant; minister",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "dictionary",
+    "id": "entry_488"
+  },
+  {
+    "source_text": "Ngaba obulwaye buno uluyari mno hadi ngalusria omkhongo wefu we sialo siabumarachi enisinuka.",
+    "target_text": "<sw> Naupea huu ugonjwa heshima sana na pia namrejeshea kiongozi wetu wa mtaa wa bumarachi shukran.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_489"
+  },
+  {
+    "source_text": "Oweindaba yiye shIachileka tawe",
+    "target_text": "<en> No one despises his own tobacco however bad it may be.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "None",
+    "domain": "proverbs",
+    "id": "entry_490"
+  },
+  {
+    "source_text": "Ingawa tulichukua ng'ombe wa Wagileti na mali kutoka miji.",
+    "target_text": "Ne kakhali khwabukula chikhaafu cha Wagileati ne kimiaandu kie mungoba.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_491"
+  },
+  {
+    "source_text": "\"Khandi Obwami bwa Nyasaye buli shinga omundu oukhabanga tsinyuma tsindayi.",
+    "target_text": "<en> Again, the kingdom of heaven is like unto a man that is a merchant seeking goodly pearls:",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_492"
+  },
+  {
+    "source_text": "Mzazi akamjibu ya kwamba yeye hana uwezo wowote wa kupata pesa.",
+    "target_text": "Omwibusi namkalusia ari Sari nende obunyali tawe obwa khunyola amang'ondo tawe",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_493"
+  },
+  {
+    "source_text": "And as they were eating, Jesus took bread, and blessed, and brake it; and he gave to the disciples, and said, Take, eat; this is my body.",
+    "target_text": "Ne olwa bali nibaliitsanga, Yesu yabukula omukaate, nakhupila Nyasaye orio, nakusonyola, ne nahelesia abeechibe. Nababoolela ari, \"Bukule, mulie. Kuno nikwo omubili kwanje \"",
+    "source_lang": "en",
+    "target_lang": "luy",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_494"
+  },
+  {
+    "source_text": "UZURI WA KUKU",
+    "target_text": "S. BULAYI WA INGOKHO",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Marachi",
+    "domain": "translations",
+    "id": "entry_495"
+  },
+  {
+    "source_text": "Hazana ha lo Iekhanga, Buyanzi bwa dodo.",
+    "target_text": "<sw> Penyewe panaonekana kuwa na furaha ya milele.",
+    "source_lang": "luy",
+    "target_lang": "sw",
+    "dialect": "Maragoli",
+    "domain": "translations",
+    "id": "entry_496"
+  },
+  {
+    "source_text": "Shinga olwa olinda eshiowashio nolwoliinda eshishio",
+    "target_text": "<en> You do not look after your neighbour's better than your own.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "None",
+    "domain": "proverbs",
+    "id": "entry_497"
+  },
+  {
+    "source_text": "Bulano khunyanga eyabafu balilamusibwa okhurula mubafu, omukhasi oyo yakhabe owa wina? Okhuba yali niyateshela boosi?\"",
+    "target_text": "<en> In the resurrection therefore whose wife shall she be of the seven? for they all had her.",
+    "source_lang": "luy",
+    "target_lang": "en",
+    "dialect": "Luwanga",
+    "domain": "bible",
+    "id": "entry_498"
+  },
+  {
+    "source_text": "Na mkiwa kwa kambi wakati wa vita ambavyo ulikopesha walianguka na asiyefanyia mnastahili mkatae kitu chochote hivyo muisraeli mwenzako.",
+    "target_text": "Ne muli mu kambi siise sie liie, nibio wikopia baakwa, ne okhakholela mukhoya mulobe sisiindu siosi siosi orio Omuisiraeli wasio tawe.",
+    "source_lang": "sw",
+    "target_lang": "luy",
+    "dialect": "Bukusu",
+    "domain": "translations",
+    "id": "entry_499"
+  }
+]
