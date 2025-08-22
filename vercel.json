@@ -1,14 +1,10 @@
 {
   "functions": {
     "api/chat.py": {
-      "runtime": "@vercel/python@3.0.0"
+      "maxDuration": 30
+    },
+    "api/health.py": {
+      "maxDuration": 30
     }
-  },
-  "routes": [
-    {
-      "src": "/api/chat",
-      "methods": ["POST", "OPTIONS"],
-      "dest": "/api/chat.py"
-    }
-  ]
+  }
 }
