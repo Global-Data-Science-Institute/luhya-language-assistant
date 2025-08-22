@@ -1,10 +1,10 @@
 {
   "functions": {
     "api/chat.py": {
-      "runtime": "python3.9"
+      "runtime": "@vercel/python"
     },
     "api/health.py": {
-      "runtime": "python3.9"
+      "runtime": "@vercel/python"
     }
   }
 }
