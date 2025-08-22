@@ -16,7 +16,7 @@ class LuhyaRAGSystem:
         self.domain_index = {}
         self.lang_pair_index = {}
         
-        # URL to  processed dataset (JSON format)
+        # URL to your processed dataset (you'll host this)
         self.dataset_url = "https://raw.githubusercontent.com/Global-Data-Science-Institute/luhya-language-assistant/refs/heads/main/data/luhya_dataset.json"
         
         self.conversation_patterns = {
@@ -509,8 +509,12 @@ rag_system = LuhyaRAGSystem()
 def handler(request):
     """Vercel serverless function handler"""
     try:
+        # Get request method and body
+        method = request.get('httpMethod', '')
+        body = request.get('body', '{}')
+        
         # CORS preflight
-        if request.method == 'OPTIONS':
+        if method == 'OPTIONS':
             return {
                 'statusCode': 200,
                 'headers': {
@@ -523,7 +527,7 @@ def handler(request):
             }
         
         # Only allow POST
-        if request.method != 'POST':
+        if method != 'POST':
             return {
                 'statusCode': 405,
                 'headers': {
@@ -535,7 +539,7 @@ def handler(request):
         
         # Parse request body
         try:
-            body = json.loads(request.body)
+            body_data = json.loads(body)
         except json.JSONDecodeError:
             return {
                 'statusCode': 400,
@@ -546,8 +550,8 @@ def handler(request):
                 'body': json.dumps({'error': 'Invalid JSON in request body'})
             }
         
-        message = body.get('message', '').strip()
-        max_results = body.get('max_results', 10)
+        message = body_data.get('message', '').strip()
+        max_results = body_data.get('max_results', 10)
         
         if not message:
             return {
