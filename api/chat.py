@@ -6,6 +6,7 @@ import random
 from typing import List, Dict, Optional
 from urllib.request import urlopen
 from urllib.error import URLError
+from werkzeug.wrappers import Request, Response
 
 class LuhyaRAGSystem:
     def __init__(self):
@@ -506,12 +507,11 @@ Make your question more specific or try simpler terms!"""
 # Initialize the RAG system globally
 rag_system = LuhyaRAGSystem()
 
-def handler(request):
-    """Vercel serverless function handler"""
+def process_request(request_data):
+    """Process the request and return response data"""
     try:
-        # Get request method and body
-        method = request.get('httpMethod', '')
-        body = request.get('body', '{}')
+        method = request_data.get('httpMethod', '')
+        body = request_data.get('body', '{}')
         
         # CORS preflight
         if method == 'OPTIONS':
@@ -632,5 +632,16 @@ def handler(request):
             })
         }
 
-# Vercel expects the handler to be named 'app' for Python functions
-app = handler
+# WSGI application wrapper
+@Request.application
+def app(request):
+    result = process_request({
+        "httpMethod": request.method,
+        "body": request.get_data(as_text=True)
+    })
+
+    return Response(
+        response=result["body"],
+        status=result["statusCode"],
+        headers=result["headers"]
+    )
