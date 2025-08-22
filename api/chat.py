@@ -16,7 +16,7 @@ class LuhyaRAGSystem:
         self.domain_index = {}
         self.lang_pair_index = {}
         
-        # URL to your processed dataset (you'll host this)
+        # URL to  processed dataset (JSON format)
         self.dataset_url = "https://raw.githubusercontent.com/Global-Data-Science-Institute/luhya-language-assistant/refs/heads/main/data/luhya_dataset.json"
         
         self.conversation_patterns = {
@@ -628,6 +628,5 @@ def handler(request):
             })
         }
 
-# Export for Vercel
-def api_handler(request):
-    return handler(request)
+# Vercel expects the handler to be named 'app' for Python functions
+app = handler
