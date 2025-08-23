@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+em {
+  font-style: italic;
+  color: #4B5563; /*  slightly different color for italics */
+}
+
+strong {
+  font-weight: 600;
+}
