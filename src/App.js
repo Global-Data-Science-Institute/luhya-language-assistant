@@ -148,7 +148,7 @@ const LuhyaRAGChat = () => {
 
   // Sample queries for quick testing
   const sampleQueries = [
-    "How do you say good morning' in Luhya?",
+    "How do you say good morning in Luhya?",
     "What does mulembe mean?",
     "How do you say thank you in different Luhya dialects?",
     "What is the Luhya word for 'water'?",

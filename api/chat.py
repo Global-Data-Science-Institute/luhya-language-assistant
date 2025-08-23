@@ -1,4 +1,4 @@
-# api/chat.py - Enhanced Vercel serverless function
+# api/chat.py - Refined Vercel serverless function with better filtering
 import json
 import os
 import re
@@ -6,31 +6,25 @@ import random
 from typing import List, Dict, Optional
 from urllib.request import urlopen
 from urllib.error import URLError
-from werkzeug.wrappers import Request, Response
 
-class EnhancedLuhyaRAGSystem:
+class RefinedLuhyaRAGSystem:
     def __init__(self):
         self.is_initialized = False
         self.documents = []
         self.metadata = []
         self.dialect_index = {}
         self.domain_index = {}
-        self.lang_pair_index = {}
         
         # URL to your processed dataset
         self.dataset_url = "https://raw.githubusercontent.com/Global-Data-Science-Institute/luhya-language-assistant/refs/heads/main/data/luhya_dataset.json"
         
+        # Conversation patterns
         self.conversation_patterns = {
             'greeting_starters': [
+                "",  # Most common - direct response
                 "Here's what I found: ",
-                "Great question! ",
                 "I can help with that! ",
-                ""
             ],
-            'enthusiasm_words': [
-                "Beautiful!", "Wonderful!", "Perfect!",
-                "That's a great question!", "Fascinating!"
-            ]
         }
     
     def load_dataset_from_url(self, url: str, timeout: int = 10) -> bool:
@@ -43,12 +37,12 @@ class EnhancedLuhyaRAGSystem:
             print(f"Loaded {len(data)} entries from dataset")
             return self.process_dataset(data)
             
-        except (URLError, json.JSONDecodeError, Exception) as e:
+        except Exception as e:
             print(f"Failed to load from URL: {e}")
             return False
     
     def load_dataset_from_env(self) -> bool:
-        """Load dataset from environment variable (base64 encoded JSON)"""
+        """Load dataset from environment variable"""
         try:
             import base64
             
@@ -56,7 +50,6 @@ class EnhancedLuhyaRAGSystem:
             if not dataset_b64:
                 return False
             
-            # Decode base64 and parse JSON
             dataset_json = base64.b64decode(dataset_b64).decode('utf-8')
             data = json.loads(dataset_json)
             
@@ -68,88 +61,93 @@ class EnhancedLuhyaRAGSystem:
             return False
     
     def load_fallback_data(self) -> bool:
-        """Load basic fallback data if external sources fail"""
+        """Load basic fallback data"""
         fallback_data = [
-            {"source_text": "good morning", "target_text": "bulamasawa", "dialect": "Bukusu", "domain": "greetings", "source_lang": "en", "target_lang": "luy"},
-            {"source_text": "good morning", "target_text": "bushiangala", "dialect": "Maragoli", "domain": "greetings", "source_lang": "en", "target_lang": "luy"},
-            {"source_text": "thank you", "target_text": "nyasaye akurinde", "dialect": "Bukusu", "domain": "courtesy", "source_lang": "en", "target_lang": "luy"},
-            {"source_text": "thank you", "target_text": "nyasaye akurunde", "dialect": "Maragoli", "domain": "courtesy", "source_lang": "en", "target_lang": "luy"},
-            {"source_text": "thank you", "target_text": "nyasayene", "dialect": "Bukusu", "domain": "courtesy", "source_lang": "en", "target_lang": "luy"},
-            {"source_text": "how are you", "target_text": "oli otia", "dialect": "Bukusu", "domain": "greetings", "source_lang": "en", "target_lang": "luy"},
-            {"source_text": "how are you", "target_text": "uli wahi", "dialect": "Maragoli", "domain": "greetings", "source_lang": "en", "target_lang": "luy"},
-            {"source_text": "water", "target_text": "machi", "dialect": "General", "domain": "basic", "source_lang": "en", "target_lang": "luy"},
-            {"source_text": "food", "target_text": "shikulia", "dialect": "General", "domain": "basic", "source_lang": "en", "target_lang": "luy"},
-            {"source_text": "house", "target_text": "ingu", "dialect": "General", "domain": "basic", "source_lang": "en", "target_lang": "luy"},
-            {"source_text": "mother", "target_text": "mama", "dialect": "General", "domain": "family", "source_lang": "en", "target_lang": "luy"},
-            {"source_text": "father", "target_text": "papa", "dialect": "General", "domain": "family", "source_lang": "en", "target_lang": "luy"},
-            {"source_text": "child", "target_text": "omwana", "dialect": "General", "domain": "family", "source_lang": "en", "target_lang": "luy"},
-            {"source_text": "love", "target_text": "okhenda", "dialect": "General", "domain": "emotions", "source_lang": "en", "target_lang": "luy"},
-            {"source_text": "peace", "target_text": "amalembe", "dialect": "General", "domain": "abstract", "source_lang": "en", "target_lang": "luy"},
-            {"source_text": "hello", "target_text": "mulembe", "dialect": "General", "domain": "greetings", "source_lang": "en", "target_lang": "luy"},
-            {"source_text": "goodbye", "target_text": "leka busalaamu", "dialect": "Bukusu", "domain": "greetings", "source_lang": "en", "target_lang": "luy"},
-            {"source_text": "yes", "target_text": "ee", "dialect": "General", "domain": "basic", "source_lang": "en", "target_lang": "luy"},
-            {"source_text": "no", "target_text": "sitini", "dialect": "General", "domain": "basic", "source_lang": "en", "target_lang": "luy"},
-            {"source_text": "please", "target_text": "nyiise", "dialect": "General", "domain": "courtesy", "source_lang": "en", "target_lang": "luy"},
+            # Greetings
+            {"source_text": "good morning", "target_text": "bulamasawa", "dialect": "Bukusu", "domain": "greetings"},
+            {"source_text": "good morning", "target_text": "bushiangala", "dialect": "Maragoli", "domain": "greetings"},
+            {"source_text": "good morning", "target_text": "vushiere", "dialect": "Tsotso", "domain": "greetings"},
+            {"source_text": "good morning", "target_text": "bushere", "dialect": "Luwanga", "domain": "greetings"},
+            
+            # Common courtesy
+            {"source_text": "thank you", "target_text": "nyasaye akurinde", "dialect": "Bukusu", "domain": "courtesy"},
+            {"source_text": "thank you", "target_text": "orio", "dialect": "Luwanga", "domain": "courtesy"},
+            {"source_text": "thank you", "target_text": "asante", "dialect": "Maragoli", "domain": "courtesy"},
+            
+            # Basic greetings
+            {"source_text": "hello", "target_text": "mulembe", "dialect": "General", "domain": "greetings"},
+            {"source_text": "how are you", "target_text": "oli otia", "dialect": "Bukusu", "domain": "greetings"},
+            {"source_text": "how are you", "target_text": "uli wahi", "dialect": "Maragoli", "domain": "greetings"},
+            
+            # Basic words
+            {"source_text": "water", "target_text": "machi", "dialect": "General", "domain": "basic"},
+            {"source_text": "food", "target_text": "shikulia", "dialect": "General", "domain": "basic"},
+            {"source_text": "house", "target_text": "ingu", "dialect": "General", "domain": "basic"},
         ]
         
         print("Using fallback dataset")
         return self.process_dataset(fallback_data)
     
     def process_dataset(self, data: List[Dict]) -> bool:
-        """Process dataset into searchable format"""
+        """Process dataset with better filtering"""
         try:
             self.documents = []
             self.metadata = []
             self.dialect_index = {}
             self.domain_index = {}
-            self.lang_pair_index = {}
             
             for idx, item in enumerate(data):
-                # Validate required fields
                 if not item.get('source_text') or not item.get('target_text'):
                     continue
                 
-                # Create searchable content
-                content = (f"Translation: {item['source_text']} → {item['target_text']} "
-                          f"Dialect: {item.get('dialect', 'General')} "
-                          f"Domain: {item.get('domain', 'general')} "
-                          f"Languages: {item.get('source_lang', 'unknown')}-{item.get('target_lang', 'luy')}")
+                source_text = str(item['source_text']).strip()
+                target_text = str(item['target_text']).strip()
                 
-                self.documents.append(content)
+                # Skip overly long entries (likely Bible verses or long passages)
+                if len(source_text) > 100 or len(target_text) > 100:
+                    continue
+                
+                # Skip entries with HTML-like tags or formatting issues
+                if any(tag in target_text.lower() for tag in ['<en>', '<sw>', '<luy_']):
+                    # Clean the target text by removing tags
+                    target_text = re.sub(r'<[^>]+>', '', target_text).strip()
+                    if not target_text or len(target_text) > 100:
+                        continue
+                
+                # Skip biblical or very formal language for basic queries
+                domain = str(item.get('domain', 'general')).lower()
+                
+                # Create searchable content
+                content = f"{source_text} → {target_text} ({item.get('dialect', 'General')})"
                 
                 # Create metadata
                 metadata = {
-                    'type': 'translation',
-                    'source_text': item['source_text'].strip(),
-                    'target_text': item['target_text'].strip(),
-                    'source_lang': item.get('source_lang', 'unknown'),
+                    'source_text': source_text,
+                    'target_text': target_text,
+                    'source_lang': item.get('source_lang', 'en'),
                     'target_lang': item.get('target_lang', 'luy'),
                     'dialect': item.get('dialect', 'General'),
-                    'domain': item.get('domain', 'general'),
-                    'id': item.get('id', f"entry_{idx}")
+                    'domain': domain,
+                    'id': f"entry_{idx}",
+                    'length_score': self.calculate_length_score(source_text, target_text),
+                    'quality_score': self.calculate_quality_score(source_text, target_text, domain)
                 }
                 
+                self.documents.append(content)
                 self.metadata.append(metadata)
                 
-                # Build indexes for faster searching
+                # Build indexes
                 dialect = metadata['dialect']
                 if dialect not in self.dialect_index:
                     self.dialect_index[dialect] = []
                 self.dialect_index[dialect].append(idx)
                 
-                domain = metadata['domain']
                 if domain not in self.domain_index:
                     self.domain_index[domain] = []
                 self.domain_index[domain].append(idx)
-                
-                lang_pair = f"{metadata['source_lang']}-{metadata['target_lang']}"
-                if lang_pair not in self.lang_pair_index:
-                    self.lang_pair_index[lang_pair] = []
-                self.lang_pair_index[lang_pair].append(idx)
             
             print(f"Processed {len(self.documents)} entries")
             print(f"Dialects: {list(self.dialect_index.keys())}")
-            print(f"Domains: {list(self.domain_index.keys())}")
             
             self.is_initialized = True
             return True
@@ -158,549 +156,414 @@ class EnhancedLuhyaRAGSystem:
             print(f"Error processing dataset: {e}")
             return False
     
+    def calculate_length_score(self, source: str, target: str) -> float:
+        """Calculate score based on text length (shorter is better for basic translations)"""
+        avg_length = (len(source) + len(target)) / 2
+        if avg_length <= 20:
+            return 1.0  # Perfect for single words/short phrases
+        elif avg_length <= 50:
+            return 0.8  # Good for phrases
+        elif avg_length <= 100:
+            return 0.5  # OK for sentences
+        else:
+            return 0.1  # Poor for long passages
+    
+    def calculate_quality_score(self, source: str, target: str, domain: str) -> float:
+        """Calculate quality score based on various factors"""
+        score = 1.0
+        
+        # Prefer dictionary and basic translation entries
+        if domain in ['dictionary', 'translations', 'greetings', 'courtesy', 'basic']:
+            score += 0.5
+        elif domain == 'bible':
+            score -= 0.3  # Deprioritize biblical text for basic queries
+        
+        # Prefer entries without complex punctuation
+        if not any(char in source + target for char in ['"', '(', ')', '[', ']', ';', ':']):
+            score += 0.2
+        
+        # Penalize entries with numbers or special characters
+        if re.search(r'\d', source + target):
+            score -= 0.2
+        
+        return max(0.1, score)
+    
     def initialize(self) -> bool:
-        """Initialize the system with multiple fallback options"""
+        """Initialize system with fallbacks"""
         if self.is_initialized:
             return True
         
-        # Try loading from environment first (fastest)
+        # Try environment first
         if self.load_dataset_from_env():
             return True
         
-        # Try loading from URL (if you host the JSON file)
+        # Try URL
         if self.load_dataset_from_url(self.dataset_url):
             return True
         
-        # Fallback to basic dataset
+        # Fallback
         return self.load_fallback_data()
     
-    def detect_query_intent_enhanced(self, query: str) -> Dict:
-        """Enhanced intent detection with better pattern matching"""
+    def detect_query_intent(self, query: str) -> Dict:
+        """Enhanced intent detection"""
         query_lower = query.lower().strip()
         
         intent_data = {
             'primary_intent': 'general',
             'key_terms': [],
-            'response_style': 'conversational',
             'target_dialect': None,
-            'target_domain': None
+            'query_type': 'translation'  # translation, meaning, general
         }
         
-        # Check for dialect-specific requests
-        dialect_mentions = {
+        # Check for specific dialect mentions
+        dialect_patterns = {
             'bukusu': 'Bukusu',
-            'maragoli': 'Maragoli', 
+            'maragoli': 'Maragoli',
             'luwanga': 'Luwanga',
-            'luhya': 'General'
+            'tsotso': 'Tsotso',
+            'marachi': 'Marachi'
         }
         
-        for dialect_key, dialect_name in dialect_mentions.items():
-            if dialect_key in query_lower:
-                intent_data['target_dialect'] = dialect_name
+        for pattern, dialect in dialect_patterns.items():
+            if pattern in query_lower:
+                intent_data['target_dialect'] = dialect
                 break
         
-        # Enhanced patterns for better intent detection - ORDER MATTERS!
-        patterns = [
-            # TRANSLATION REQUEST PATTERNS (highest priority)
-            ('translation_request', [
-                r'what (?:is|does|means?) ([^?]+?) in luhya(?:\?|$)',  # "what is water in luhya"
-                r'what is the luhya (?:word|translation) for ([^?]+?)(?:\?|$)',  # "what is the luhya word for water"
-                r'how (?:do you say|to say) ([^?]+?) in luhya(?:\?|$)',  # "how do you say water in luhya"
-                r'luhya (?:word|translation) for ([^?]+?)(?:\?|$)',  # "luhya word for water"
-                r'translate ([^?]+?) (?:to|into) luhya(?:\?|$)',  # "translate water to luhya"
-                r'how do i say ([^?]+?)(?:\?|$)',  # "how do i say water"
-                r'say ([^?]+?) in luhya(?:\?|$)',  # "say water in luhya"
-                r'([^?]+?) in luhya(?:\?|$)',  # "water in luhya"
-            ]),
-            # DICTIONARY LOOKUP PATTERNS (checked after translation patterns)
-            ('dictionary_lookup', [
-                r'what (?:is|does|means?) ([a-zA-Z]+[a-zA-Z]*)(?:\?|$)',  # "what is amatsi" - Luhya words
-                r'(?:meaning of|define) ([^?]+?)(?:\?|$)',  # "meaning of amatsi"
-                r'tell me about ([^?]+?)(?:\?|$)',  # "tell me about amatsi"
-                r'what does ([^?]+?) mean(?:\?|$)',  # "what does amatsi mean"
-            ]),
+        # Enhanced translation patterns with better extraction
+        translation_patterns = [
+            (r'how do you say ["\']([^"\']+)["\'] in (?:(\w+) )?luhya', 'translation_request'),
+            (r'what is ["\']([^"\']+)["\'] in (?:(\w+) )?luhya', 'translation_request'),
+            (r'how to say ["\']([^"\']+)["\'] in (?:(\w+) )?luhya', 'translation_request'),
+            (r'say ["\']([^"\']+)["\'] in (?:(\w+) )?luhya', 'translation_request'),
+            (r'translate ["\']([^"\']+)["\'] to (?:(\w+) )?luhya', 'translation_request'),
+            (r'["\']([^"\']+)["\'] in (?:(\w+) )?luhya', 'translation_request'),
+            
+            # Without quotes
+            (r'how do you say ([^?]+?) in (?:(\w+) )?luhya', 'translation_request'),
+            (r'what is ([^?]+?) in (?:(\w+) )?luhya', 'translation_request'),
+            (r'how to say ([^?]+?) in (?:(\w+) )?luhya', 'translation_request'),
+            (r'say ([^?]+?) in (?:(\w+) )?luhya', 'translation_request'),
+            (r'translate ([^?]+?) to (?:(\w+) )?luhya', 'translation_request'),
         ]
         
-        # Check patterns in order (translation patterns first!)
-        for intent, pattern_list in patterns:
-            for pattern in pattern_list:
+        # Dictionary/meaning patterns
+        meaning_patterns = [
+            (r'what does ([^?]+?) mean', 'dictionary_lookup'),
+            (r'meaning of ([^?]+)', 'dictionary_lookup'),
+            (r'define ([^?]+)', 'dictionary_lookup'),
+            (r'what is ([a-zA-Z]+)', 'dictionary_lookup'),  # For Luhya words
+        ]
+        
+        # Check translation patterns first
+        for pattern, intent in translation_patterns:
+            match = re.search(pattern, query_lower)
+            if match:
+                intent_data['primary_intent'] = intent
+                intent_data['key_terms'] = [match.group(1).strip()]
+                intent_data['query_type'] = 'translation'
+                
+                # Check if dialect was specified in the pattern
+                if len(match.groups()) > 1 and match.group(2):
+                    dialect_mentioned = match.group(2).lower()
+                    if dialect_mentioned in dialect_patterns:
+                        intent_data['target_dialect'] = dialect_patterns[dialect_mentioned]
+                break
+        
+        # Check meaning patterns if no translation pattern matched
+        if intent_data['primary_intent'] == 'general':
+            for pattern, intent in meaning_patterns:
                 match = re.search(pattern, query_lower)
                 if match:
                     intent_data['primary_intent'] = intent
-                    if match.groups():
-                        # Clean the extracted term
-                        extracted_term = match.group(1).strip()
-                        # Remove common trailing words that might be captured
-                        cleaned_term = re.sub(r'\s+(?:in luhya|language)$', '', extracted_term)
-                        # Remove articles and common prefixes
-                        cleaned_term = re.sub(r'^(?:a |an |the |my |his |her |our |their )', '', cleaned_term)
-                        # Remove extra whitespace
-                        cleaned_term = cleaned_term.strip()
-                        intent_data['key_terms'] = [cleaned_term]
+                    intent_data['key_terms'] = [match.group(1).strip()]
+                    intent_data['query_type'] = 'meaning'
                     break
-            if intent_data['primary_intent'] != 'general':
-                break
         
         # Extract key terms if not found
         if not intent_data['key_terms']:
-            common_words = {'what', 'is', 'the', 'how', 'do', 'you', 'say', 'in', 'luhya', 
-                           'about', 'different', 'dialects', 'mean', 'means', 'translate'}
-            words = [word for word in query_lower.split() if word not in common_words and len(word) > 2]
-            intent_data['key_terms'] = words[:3]
+            stop_words = {'what', 'is', 'the', 'how', 'do', 'you', 'say', 'in', 'luhya', 'mean', 'means'}
+            words = [w for w in query_lower.split() if w not in stop_words and len(w) > 2]
+            intent_data['key_terms'] = words[:2]
         
         return intent_data
     
-    def smart_search_enhanced(self, query: str, intent_data: Dict, max_results: int = 15) -> List[Dict]:
-        """Enhanced intelligent search with multiple strategies"""
+    def smart_search(self, query: str, intent_data: Dict, max_results: int = 10) -> List[Dict]:
+        """Refined search with better scoring"""
         if not self.is_initialized:
             return []
         
-        all_results = []
+        results = []
+        key_terms = intent_data.get('key_terms', [])
+        target_dialect = intent_data.get('target_dialect')
+        query_type = intent_data.get('query_type', 'translation')
         
-        # Strategy 1: Exact term matching (highest priority for dictionary lookups)
-        exact_results = self.exact_term_search_enhanced(intent_data['key_terms'], intent_data)
-        for result in exact_results:
-            result['strategy_weight'] = 1.0
-            all_results.append(result)
+        for term in key_terms:
+            if not term or len(term) < 2:
+                continue
+                
+            term_lower = term.lower().strip()
+            
+            for i, metadata in enumerate(self.metadata):
+                source = metadata['source_text'].lower()
+                target = metadata['target_text'].lower()
+                dialect = metadata['dialect']
+                domain = metadata['domain']
+                
+                # Calculate base similarity score
+                similarity = 0
+                match_type = ""
+                
+                # Exact matches get highest priority
+                if term_lower == source:
+                    similarity = 1.0
+                    match_type = "exact_source"
+                elif term_lower == target and query_type == 'meaning':
+                    similarity = 0.98
+                    match_type = "exact_target"
+                # Word boundary matches
+                elif re.search(rf'\b{re.escape(term_lower)}\b', source):
+                    similarity = 0.85
+                    match_type = "word_boundary_source"
+                elif re.search(rf'\b{re.escape(term_lower)}\b', target) and query_type == 'meaning':
+                    similarity = 0.82
+                    match_type = "word_boundary_target"
+                # Contains matches (only for longer terms)
+                elif len(term_lower) > 3 and term_lower in source:
+                    similarity = 0.7
+                    match_type = "contains_source"
+                elif len(term_lower) > 3 and term_lower in target and query_type == 'meaning':
+                    similarity = 0.67
+                    match_type = "contains_target"
+                
+                if similarity > 0:
+                    # Apply quality multipliers
+                    final_score = similarity * metadata['length_score'] * metadata['quality_score']
+                    
+                    # Dialect boost
+                    if target_dialect and dialect == target_dialect:
+                        final_score *= 1.3
+                        match_type += f"_dialect_boost_{target_dialect}"
+                    
+                    # Domain preference for basic queries
+                    if domain in ['dictionary', 'translations', 'greetings', 'courtesy']:
+                        final_score *= 1.2
+                    elif domain == 'bible':
+                        final_score *= 0.6  # Significantly reduce biblical entries
+                    
+                    results.append({
+                        'metadata': metadata,
+                        'similarity': similarity,
+                        'final_score': final_score,
+                        'match_type': match_type
+                    })
         
-        # Strategy 2: Fuzzy term matching
-        fuzzy_results = self.fuzzy_term_search(intent_data['key_terms'], intent_data)
-        for result in fuzzy_results:
-            result['strategy_weight'] = 0.8
-            all_results.append(result)
+        # Sort by final score and remove duplicates
+        results.sort(key=lambda x: x['final_score'], reverse=True)
         
-        # Strategy 3: Dialect-specific search
-        if intent_data.get('target_dialect'):
-            dialect_results = self.dialect_search(intent_data['target_dialect'], intent_data['key_terms'])
-            for result in dialect_results:
-                result['strategy_weight'] = 0.7
-                all_results.append(result)
-        
-        # Enhanced scoring and deduplication
-        seen_ids = set()
+        # Remove duplicates based on source-target-dialect combination
+        seen = set()
         unique_results = []
         
-        # Calculate final scores: similarity * strategy_weight
-        for result in all_results:
-            original_similarity = result.get('similarity', 0)
-            strategy_weight = result.get('strategy_weight', 0.5)
-            result['final_score'] = original_similarity * strategy_weight
-        
-        # Sort by final score (highest first)
-        all_results.sort(key=lambda x: x.get('final_score', 0), reverse=True)
-        
-        # Deduplicate while preserving order
-        for result in all_results:
-            result_id = result['metadata'].get('id', '')
-            if result_id not in seen_ids:
-                seen_ids.add(result_id)
-                unique_results.append(result)
+        for result in results:
+            meta = result['metadata']
+            key = (meta['source_text'].lower(), meta['target_text'].lower(), meta['dialect'])
             
-            if len(unique_results) >= max_results:
-                break
+            if key not in seen:
+                seen.add(key)
+                unique_results.append(result)
+                
+                if len(unique_results) >= max_results:
+                    break
         
         return unique_results
     
-    def exact_term_search_enhanced(self, key_terms: List[str], intent_data: Dict) -> List[Dict]:
-        """Enhanced exact term search with better scoring"""
-        results = []
-        
-        for term in key_terms:
-            term_lower = term.lower().strip()
-            if len(term_lower) < 2:
-                continue
-            
-            for i, metadata in enumerate(self.metadata):
-                source_text = metadata.get('source_text', '').lower()
-                target_text = metadata.get('target_text', '').lower()
-                
-                score = 0
-                reason = ""
-                
-                # Exact matches get highest score
-                if term_lower == source_text:
-                    score = 1.0
-                    reason = f"Exact source match for '{term}'"
-                elif term_lower == target_text:
-                    score = 0.95
-                    reason = f"Exact target match for '{term}'"
-                # Word boundary matches
-                elif re.search(rf'\b{re.escape(term_lower)}\b', source_text):
-                    score = 0.85
-                    reason = f"Word boundary match in source for '{term}'"
-                elif re.search(rf'\b{re.escape(term_lower)}\b', target_text):
-                    score = 0.8
-                    reason = f"Word boundary match in target for '{term}'"
-                # Partial matches
-                elif term_lower in source_text and len(term_lower) > 3:
-                    score = 0.7
-                    reason = f"Partial match in source for '{term}'"
-                elif term_lower in target_text and len(term_lower) > 3:
-                    score = 0.65
-                    reason = f"Partial match in target for '{term}'"
-                
-                # Boost score for dialect preference
-                if intent_data.get('target_dialect') and metadata.get('dialect') == intent_data['target_dialect']:
-                    score *= 1.2
-                    reason += f" (dialect boost: {intent_data['target_dialect']})"
-                
-                if score > 0:
-                    results.append({
-                        'content': self.documents[i],
-                        'metadata': metadata,
-                        'similarity': score,
-                        'match_reason': reason,
-                        'search_strategy': 'exact_term_enhanced'
-                    })
-        
-        return results
-    
-    def fuzzy_term_search(self, key_terms: List[str], intent_data: Dict) -> List[Dict]:
-        """Search for partial term matches"""
-        results = []
-        
-        for term in key_terms:
-            term_lower = term.lower().strip()
-            if len(term_lower) < 3:
-                continue
-            
-            for i, metadata in enumerate(self.metadata):
-                source_text = metadata.get('source_text', '').lower()
-                target_text = metadata.get('target_text', '').lower()
-                
-                score = 0
-                
-                # Word-level matching
-                term_words = term_lower.split()
-                source_words = source_text.split()
-                target_words = target_text.split()
-                
-                for term_word in term_words:
-                    if any(term_word in sw for sw in source_words):
-                        score += 0.3
-                    if any(term_word in tw for tw in target_words):
-                        score += 0.25
-                
-                # Boost for dialect preference
-                if intent_data.get('target_dialect') and metadata.get('dialect') == intent_data['target_dialect']:
-                    score *= 1.3
-                
-                if score > 0.2:
-                    results.append({
-                        'content': self.documents[i],
-                        'metadata': metadata,
-                        'similarity': min(score, 0.9),
-                        'match_reason': f'Partial match for "{term}"',
-                        'search_strategy': 'fuzzy_term'
-                    })
-        
-        return results
-    
-    def dialect_search(self, dialect: str, key_terms: List[str]) -> List[Dict]:
-        """Search within specific dialect"""
-        results = []
-        
-        if dialect not in self.dialect_index:
-            return results
-        
-        indices = self.dialect_index[dialect]
-        
-        for idx in indices:
-            metadata = self.metadata[idx]
-            source_text = metadata.get('source_text', '').lower()
-            target_text = metadata.get('target_text', '').lower()
-            
-            score = 0.5  # Base score for dialect match
-            
-            # Check if any key terms match
-            for term in key_terms:
-                term_lower = term.lower()
-                if term_lower in source_text or term_lower in target_text:
-                    score += 0.3
-            
-            if score > 0.5:
-                results.append({
-                    'content': self.documents[idx],
-                    'metadata': metadata,
-                    'similarity': score,
-                    'match_reason': f'Dialect-specific: {dialect}',
-                    'search_strategy': 'dialect_search'
-                })
-        
-        return results
-    
-    def generate_enhanced_response(self, query: str, results: List[Dict], intent_data: Dict) -> str:
-        """Generate enhanced human-like response"""
+    def generate_response(self, query: str, results: List[Dict], intent_data: Dict) -> str:
+        """Generate clean, focused responses"""
         if not results:
-            return self.generate_no_results_response_enhanced(query, intent_data)
+            return self.generate_no_results_response(query, intent_data)
+        
+        # Extract query term for response
+        query_term = intent_data['key_terms'][0] if intent_data['key_terms'] else ""
+        target_dialect = intent_data.get('target_dialect')
+        query_type = intent_data.get('query_type', 'translation')
         
         response_parts = []
         
-        # Add conversational starter
+        # Add minimal starter (mostly empty for cleaner responses)
         starter = random.choice(self.conversation_patterns['greeting_starters'])
         if starter:
             response_parts.append(starter)
         
-        # Generate main content based on intent
-        if intent_data['primary_intent'] in ['translation_request', 'dictionary_lookup']:
-            main_content = self.format_translation_response_enhanced(query, results, intent_data)
+        # Generate response based on query type
+        if query_type == 'translation':
+            content = self.format_translation_response(query_term, results, target_dialect)
         else:
-            main_content = self.format_general_response_enhanced(query, results)
+            content = self.format_meaning_response(query_term, results, target_dialect)
         
-        response_parts.append(main_content)
-        
+        response_parts.append(content)
         return "".join(response_parts)
     
-    def format_translation_response_enhanced(self, query: str, results: List[Dict], intent_data: Dict) -> str:
-        """Enhanced translation response formatting"""
+    def format_translation_response(self, query_term: str, results: List[Dict], target_dialect: str = None) -> str:
+        """Format translation responses clearly"""
         response_parts = []
         
-        # Extract the term being asked about
-        query_term = self.extract_query_term(query)
+        if target_dialect:
+            response_parts.append(f'**"{query_term}"** in {target_dialect} Luhya:\n\n')
+        else:
+            response_parts.append(f'**"{query_term}"** in Luhya:\n\n')
         
-        # Group results by dialect
+        # Group by dialect for better organization
         dialect_groups = {}
-        for result in results[:10]:
-            dialect = result['metadata'].get('dialect', 'General')
+        for result in results[:8]:  # Limit to best results
+            meta = result['metadata']
+            dialect = meta['dialect']
+            
             if dialect not in dialect_groups:
                 dialect_groups[dialect] = []
-            dialect_groups[dialect].append(result)
+            dialect_groups[dialect].append(meta)
         
-        if dialect_groups:
-            if query_term:
-                response_parts.append(f'**"{query_term}"** in Luhya:\n\n')
+        # Show results by dialect
+        for dialect, entries in dialect_groups.items():
+            if len(dialect_groups) > 1 and not target_dialect:
+                response_parts.append(f"**{dialect}:** ")
             
-            # Show results grouped by dialect
-            for dialect, dialect_results in dialect_groups.items():
-                if len(dialect_groups) > 1:  # Only show dialect header if multiple dialects
-                    response_parts.append(f"**{dialect} dialect:**\n")
-                
-                # Show unique translations for this dialect
-                seen_targets = set()
-                for result in dialect_results[:3]:
-                    meta = result['metadata']
-                    target = meta.get('target_text', '')
-                    source = meta.get('source_text', '')
-                    
-                    if target and target not in seen_targets:
-                        if intent_data['primary_intent'] == 'dictionary_lookup' and query_term.lower() == target.lower():
-                            # For dictionary lookups, show source→target
-                            response_parts.append(f"• **{source}** → **{target}**\n")
-                        else:
-                            # For translation requests, show target
-                            response_parts.append(f"• **{target}**\n")
-                        seen_targets.add(target)
-                
-                if len(dialect_groups) > 1:
+            # Show unique translations
+            unique_translations = []
+            for entry in entries[:3]:  # Max 3 per dialect
+                translation = entry['target_text']
+                if translation not in unique_translations:
+                    unique_translations.append(translation)
+            
+            if unique_translations:
+                response_parts.append("**" + "**, **".join(unique_translations) + "**")
+                if len(dialect_groups) > 1 and not target_dialect:
                     response_parts.append("\n")
-            
-            # Add helpful context
-            total_dialects = len(dialect_groups)
-            if total_dialects > 1:
-                response_parts.append(f"Found translations in {total_dialects} dialect(s). ")
-            
-            # Show domain if relevant
-            domains = set(r['metadata'].get('domain', '') for r in results[:5])
-            domains.discard('')
-            if domains and len(domains) == 1:
-                domain = domains.pop()
-                if domain != 'general':
-                    response_parts.append(f"(Category: {domain})")
+                else:
+                    response_parts.append("\n\n")
         
-        else:
-            response_parts.append(f'I couldn\'t find a translation for **"{query_term}"** in my current database.')
-            response_parts.append('\n\nTry asking about common words like "thank you", "good morning", or "water".')
+        # Add context if multiple dialects
+        if len(dialect_groups) > 1 and not target_dialect:
+            response_parts.append(f"\nFound in {len(dialect_groups)} Luhya dialect(s).")
         
-        return "".join(response_parts)
+        return "".join(response_parts).strip()
     
-    def extract_query_term(self, query: str) -> str:
-        """Extract the term being asked about"""
-        query_lower = query.lower()
-        
-        patterns = [
-            r'what (?:is|does|means?) ["\']?([^"\'?]+)["\']? in luhya',
-            r'how (?:do you say|to say) ["\']?([^"\'?]+)["\']? in luhya',
-            r'luhya (?:word|translation) for ["\']?([^"\'?]+)["\']?',
-            r'translate ["\']?([^"\'?]+)["\']? (?:to|into) luhya',
-            r'how do i say ["\']?([^"\'?]+)["\']?',
-            r'say ["\']?([^"\'?]+)["\']? in luhya',
-            r'([^?]+?) in luhya(?:\?|$)'
-        ]
-        
-        for pattern in patterns:
-            match = re.search(pattern, query_lower)
-            if match:
-                return match.group(1).strip()
-        
-        return ""
-    
-    def format_general_response_enhanced(self, query: str, results: List[Dict]) -> str:
-        """Enhanced general response formatting"""
+    def format_meaning_response(self, query_term: str, results: List[Dict], target_dialect: str = None) -> str:
+        """Format meaning/dictionary responses"""
         response_parts = []
         
-        response_parts.append("Here are relevant Luhya translations:\n\n")
+        response_parts.append(f'**"{query_term}"** means:\n\n')
         
-        # Show top results with better formatting
-        for i, result in enumerate(results[:6]):
+        # Show translations grouped by dialect
+        for i, result in enumerate(results[:5]):
             meta = result['metadata']
-            source = meta.get('source_text', '')
-            target = meta.get('target_text', '')
-            dialect = meta.get('dialect', 'General')
+            source = meta['source_text']
+            target = meta['target_text']
+            dialect = meta['dialect']
             
-            response_parts.append(f"**{i+1}.** {source} → **{target}** ({dialect})\n")
-        
-        if len(results) > 6:
-            response_parts.append(f"\n...and {len(results) - 6} more found.")
+            if dialect != 'General':
+                response_parts.append(f"**{dialect}:** {source} → {target}\n")
+            else:
+                response_parts.append(f"**{source}** → {target}\n")
         
         return "".join(response_parts)
     
-    def generate_no_results_response_enhanced(self, query: str, intent_data: Dict) -> str:
-        """Enhanced no-results response"""
+    def generate_no_results_response(self, query: str, intent_data: Dict) -> str:
+        """Generate helpful no-results response"""
+        query_term = intent_data['key_terms'][0] if intent_data['key_terms'] else "that"
         
-        query_lower = query.lower()
+        available_dialects = list(self.dialect_index.keys())[:5]  # Show first 5
         
-        # Special handling for common requests
-        if any(word in query_lower for word in ['goodbye', 'farewell', 'bye']):
-            return """To say "goodbye" in Luhya, you can use several expressions:
-
-• **Khwilindila** — A formal farewell
-• **Mugole** — Common way to say goodbye
-• **Khube** — Casual "bye"
-
-💡 **Try asking**: "What does khwilindila mean?" for more details."""
-        
-        if any(word in query_lower for word in ['hello', 'hi', 'greet']):
-            return """Luhya greetings:
-
-**Daily Greetings:**
-• **Mulembe** — General greeting (used anytime)
-• **Bwakhera** — "Good morning"
-• **Bwirire** — "Good evening"
-
-💡 **Try asking**: "What does bwakhera mean?" for more details."""
-        
-        # General no-results response
-        total_entries = len(self.metadata)
-        available_dialects = list(self.dialect_index.keys())
-        
-        return f"""I couldn't find specific information about that in my Luhya database ({total_entries:,} translations).
+        return f"""I couldn't find **"{query_term}"** in my Luhya database.
 
 **Try asking about:**
-• **Greetings**: "How do you say good morning' in Luhya?"
-• **Courtesy**: "What's thank you in different Luhya dialects?"
-• **Basic words**: "How to say 'water' or 'food' in Luhya?"
-• **Family terms**: "What's 'mother' in Luhya?"
+• Common greetings: "good morning", "hello", "how are you"
+• Basic courtesy: "thank you", "please", "excuse me"  
+• Essential words: "water", "food", "house"
 
-**Available dialects**: {', '.join(available_dialects)}
+**Available dialects:** {', '.join(available_dialects)}
 
-Make your question more specific or try simpler terms!"""
+Try simpler terms or check your spelling!"""
 
-# Initialize the enhanced RAG system
-enhanced_rag_system = EnhancedLuhyaRAGSystem()
-
-def process_request(request_data):
-    """Process the request and return response data"""
+def handler(request):
+    """Main Vercel handler"""
+    
+    # CORS headers
+    cors_headers = {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'POST, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type'
+    }
+    
+    # Handle OPTIONS
+    if request.method == 'OPTIONS':
+        return {
+            'statusCode': 200,
+            'headers': cors_headers,
+            'body': ''
+        }
+    
+    # Only POST allowed
+    if request.method != 'POST':
+        return {
+            'statusCode': 405,
+            'headers': {**cors_headers, 'Content-Type': 'application/json'},
+            'body': json.dumps({'error': 'Method not allowed'})
+        }
+    
     try:
-        method = request_data.get('httpMethod', '')
-        body = request_data.get('body', '{}')
-        
-        # CORS preflight
-        if method == 'OPTIONS':
-            return {
-                'statusCode': 200,
-                'headers': {
-                    'Access-Control-Allow-Origin': '*',
-                    'Access-Control-Allow-Methods': 'POST, OPTIONS',
-                    'Access-Control-Allow-Headers': 'Content-Type',
-                    'Access-Control-Max-Age': '86400'
-                },
-                'body': ''
-            }
-        
-        # Only allow POST
-        if method != 'POST':
-            return {
-                'statusCode': 405,
-                'headers': {
-                    'Content-Type': 'application/json',
-                    'Access-Control-Allow-Origin': '*'
-                },
-                'body': json.dumps({'error': 'Method not allowed'})
-            }
-        
-        # Parse request body
+        # Parse request
         try:
-            body_data = json.loads(body)
+            body = json.loads(request.body)
         except json.JSONDecodeError:
             return {
                 'statusCode': 400,
-                'headers': {
-                    'Content-Type': 'application/json',
-                    'Access-Control-Allow-Origin': '*'
-                },
-                'body': json.dumps({'error': 'Invalid JSON in request body'})
+                'headers': {**cors_headers, 'Content-Type': 'application/json'},
+                'body': json.dumps({'error': 'Invalid JSON'})
             }
         
-        message = body_data.get('message', '').strip()
-        max_results = body_data.get('max_results', 10)
-        
+        message = body.get('message', '').strip()
         if not message:
             return {
                 'statusCode': 400,
-                'headers': {
-                    'Content-Type': 'application/json',
-                    'Access-Control-Allow-Origin': '*'
-                },
-                'body': json.dumps({'error': 'Message is required'})
+                'headers': {**cors_headers, 'Content-Type': 'application/json'},
+                'body': json.dumps({'error': 'Message required'})
             }
         
-        # Initialize system if needed
-        if not enhanced_rag_system.initialize():
+        # Initialize system
+        rag_system = RefinedLuhyaRAGSystem()
+        if not rag_system.initialize():
             return {
                 'statusCode': 500,
-                'headers': {
-                    'Content-Type': 'application/json',
-                    'Access-Control-Allow-Origin': '*'
-                },
+                'headers': {**cors_headers, 'Content-Type': 'application/json'},
                 'body': json.dumps({
                     'error': 'System initialization failed',
-                    'response': 'Sorry, the translation system is having trouble starting. Please try again.'
+                    'response': 'Translation system unavailable. Please try again.'
                 })
             }
         
-        # Get enhanced intent analysis
-        intent_data = enhanced_rag_system.detect_query_intent_enhanced(message)
+        # Process query
+        intent_data = rag_system.detect_query_intent(message)
+        results = rag_system.smart_search(message, intent_data, 10)
+        response_text = rag_system.generate_response(message, results, intent_data)
         
-        # Search for relevant content with enhanced strategies
-        results = enhanced_rag_system.smart_search_enhanced(message, intent_data, max_results)
-        
-        # Generate enhanced response
-        response = enhanced_rag_system.generate_enhanced_response(message, results, intent_data)
-        
-        # Format sources for frontend
+        # Format sources
         sources = []
-        for result in results[:5]:
+        for result in results[:3]:
             meta = result['metadata']
             sources.append({
-                'text': f"{meta.get('source_text', '')} → {meta.get('target_text', '')}",
+                'text': f"{meta['source_text']} → {meta['target_text']}",
                 'metadata': {
-                    'type': meta.get('domain', 'translation'),
-                    'dialect': meta.get('dialect', 'General'),
-                    'confidence': result.get('final_score', result.get('similarity', 0)),
-                    'lang_pair': f"{meta.get('source_lang', '')}-{meta.get('target_lang', '')}"
+                    'dialect': meta['dialect'],
+                    'domain': meta['domain'],
+                    'confidence': round(result['final_score'], 2)
                 }
             })
         
         return {
             'statusCode': 200,
-            'headers': {
-                'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': '*',
-                'Access-Control-Allow-Methods': 'POST, OPTIONS',
-                'Access-Control-Allow-Headers': 'Content-Type'
-            },
+            'headers': {**cors_headers, 'Content-Type': 'application/json'},
             'body': json.dumps({
-                'response': response,
+                'response': response_text,
                 'sources': sources,
                 'intent': intent_data['primary_intent'],
                 'query_terms': intent_data['key_terms'],
@@ -712,27 +575,10 @@ def process_request(request_data):
     except Exception as e:
         return {
             'statusCode': 500,
-            'headers': {
-                'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': '*'
-            },
+            'headers': {**cors_headers, 'Content-Type': 'application/json'},
             'body': json.dumps({
                 'error': 'Internal server error',
                 'message': str(e),
-                'response': 'Sorry, something went wrong. Please try again.'
+                'response': 'Something went wrong. Please try again.'
             })
         }
-
-# WSGI application wrapper
-@Request.application
-def app(request):
-    result = process_request({
-        "httpMethod": request.method,
-        "body": request.get_data(as_text=True)
-    })
-
-    return Response(
-        response=result["body"],
-        status=result["statusCode"],
-        headers=result["headers"]
-    )
