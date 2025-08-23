@@ -24,8 +24,13 @@ class RefinedLuhyaRAGSystem:
             'greeting_starters': [
                 "",  # Most common - direct response
                 "Here's what I found: ",
-                "I can help with that! ",
+                "In Luhya, ",
             ],
+            'meaning_starters': [
+                "",  # Direct response
+                "Let me explain: ",
+                "Here's the meaning: ",
+            ]
         }
     
     def load_dataset_from_url(self, url: str, timeout: int = 10) -> bool:
@@ -405,13 +410,8 @@ class RefinedLuhyaRAGSystem:
         return "".join(response_parts)
     
     def format_translation_response(self, query_term: str, results: List[Dict], target_dialect: str = None) -> str:
-        """Format translation responses clearly"""
+        """Format translation responses in a natural, conversational way"""
         response_parts = []
-        
-        if target_dialect:
-            response_parts.append(f'**"{query_term}"** in {target_dialect} Luhya:\n\n')
-        else:
-            response_parts.append(f'**"{query_term}"** in Luhya:\n\n')
         
         # Group by dialect for better organization
         dialect_groups = {}
@@ -421,52 +421,226 @@ class RefinedLuhyaRAGSystem:
             
             if dialect not in dialect_groups:
                 dialect_groups[dialect] = []
-            dialect_groups[dialect].append(meta)
+            dialect_groups[dialect].append(meta['target_text'])
         
-        # Show results by dialect
-        for dialect, entries in dialect_groups.items():
-            if len(dialect_groups) > 1 and not target_dialect:
-                response_parts.append(f"**{dialect}:** ")
-            
-            # Show unique translations
-            unique_translations = []
-            for entry in entries[:3]:  # Max 3 per dialect
-                translation = entry['target_text']
-                if translation not in unique_translations:
-                    unique_translations.append(translation)
-            
-            if unique_translations:
-                response_parts.append("**" + "**, **".join(unique_translations) + "**")
-                if len(dialect_groups) > 1 and not target_dialect:
-                    response_parts.append("\n")
-                else:
-                    response_parts.append("\n\n")
+        # Remove duplicates within each dialect
+        for dialect in dialect_groups:
+            dialect_groups[dialect] = list(dict.fromkeys(dialect_groups[dialect]))
         
-        # Add context if multiple dialects
-        if len(dialect_groups) > 1 and not target_dialect:
-            response_parts.append(f"\nFound in {len(dialect_groups)} Luhya dialect(s).")
+        # Generate natural conversational response
+        if target_dialect and target_dialect in dialect_groups:
+            # User asked for specific dialect
+            translations = dialect_groups[target_dialect][:3]
+            response_parts.append(f'In {target_dialect} Luhya, *{query_term}* is **{translations[0]}**')
+            
+            if len(translations) > 1:
+                response_parts.append(f' (you might also hear *{", ".join(translations[1:])}*)')
+            response_parts.append('.')
+        
+        elif len(dialect_groups) == 1:
+            # Single dialect found
+            dialect = list(dialect_groups.keys())[0]
+            translations = list(dialect_groups.values())[0][:3]
+            
+            if dialect == 'General':
+                response_parts.append(f'In Luhya, *{query_term}* is **{translations[0]}**')
+            else:
+                response_parts.append(f'In Luhya (specifically {dialect}), *{query_term}* is **{translations[0]}**')
+            
+            if len(translations) > 1:
+                response_parts.append(f' (variations include *{", ".join(translations[1:])}*)')
+            response_parts.append('.')
+            
+        else:
+            # Multiple dialects - show the variation
+            primary_dialect = list(dialect_groups.keys())[0]
+            primary_translation = dialect_groups[primary_dialect][0]
+            
+            response_parts.append(f'In Luhya, *{query_term}* is **{primary_translation}**, though the exact word varies by dialect:\n\n')
+            
+            for dialect, translations in list(dialect_groups.items())[:4]:  # Show up to 4 dialects
+                unique_translations = translations[:2]  # Max 2 per dialect
+                response_parts.append(f'• **{dialect}:** *{", ".join(unique_translations)}*\n')
+            
+            if len(dialect_groups) > 4:
+                response_parts.append(f'\n*...and {len(dialect_groups) - 4} more dialect(s)*')
+        
+        # Add pronunciation tip for common words
+        self.add_pronunciation_tip(query_term.lower(), response_parts)
         
         return "".join(response_parts).strip()
     
-    def format_meaning_response(self, query_term: str, results: List[Dict], target_dialect: str = None) -> str:
-        """Format meaning/dictionary responses"""
+    def add_pronunciation_tip(self, word: str, response_parts: List[str]):
+        """Add helpful pronunciation tips for common words"""
+        pronunciation_tips = {
+            'good morning': "\n\n*Tip: In most Luhya dialects, morning greetings are used until around 10 AM.*",
+            'thank you': "\n\n*Note: Expressing gratitude is very important in Luhya culture, and the phrases often invoke blessings.*",
+            'hello': "\n\n*Cultural note: Luhya greetings often inquire about one's wellbeing and peace.*",
+            'water': "\n\n*This is an essential word to know, as asking for water is common courtesy when visiting.*"
+        }
+        
+        if word in pronunciation_tips:
+            response_parts.append(pronunciation_tips[word])
+    
+    def generate_response(self, query: str, results: List[Dict], intent_data: Dict) -> str:
+        """Generate clean, focused responses with appropriate starters"""
+        if not results:
+            return self.generate_no_results_response(query, intent_data)
+        
+        # Extract query term for response
+        query_term = intent_data['key_terms'][0] if intent_data['key_terms'] else ""
+        target_dialect = intent_data.get('target_dialect')
+        query_type = intent_data.get('query_type', 'translation')
+        
         response_parts = []
         
-        response_parts.append(f'**"{query_term}"** means:\n\n')
+        # Choose appropriate starter based on query type
+        if query_type == 'meaning':
+            starter = random.choice(self.conversation_patterns['meaning_starters'])
+        else:
+            starter = random.choice(self.conversation_patterns['greeting_starters'])
         
-        # Show translations grouped by dialect
-        for i, result in enumerate(results[:5]):
+        if starter:
+            response_parts.append(starter)
+        
+        # Generate response based on query type
+        if query_type == 'translation':
+            content = self.format_translation_response(query_term, results, target_dialect)
+        else:
+            content = self.format_meaning_response(query_term, results, target_dialect)
+        
+        response_parts.append(content)
+        return "".join(response_parts)
+    
+    def format_meaning_response(self, query_term: str, results: List[Dict], target_dialect: str = None) -> str:
+        """Format meaning/dictionary responses in a natural, conversational way"""
+        if not results:
+            return f'I couldn\'t find the meaning of *{query_term}* in my Luhya database.'
+        
+        response_parts = []
+        
+        # Group results by dialect and meaning
+        dialect_meanings = {}
+        translations = {}
+        
+        for result in results[:8]:
             meta = result['metadata']
-            source = meta['source_text']
-            target = meta['target_text']
+            source = meta['source_text'].strip()
+            target = meta['target_text'].strip()
             dialect = meta['dialect']
             
-            if dialect != 'General':
-                response_parts.append(f"**{dialect}:** {source} → {target}\n")
-            else:
-                response_parts.append(f"**{source}** → {target}\n")
+            # Skip overly long entries
+            if len(source) > 80 or len(target) > 80:
+                continue
+            
+            if dialect not in dialect_meanings:
+                dialect_meanings[dialect] = []
+            
+            # Determine if this is a definition or translation
+            if query_term.lower() == target.lower():
+                # This is defining a Luhya word
+                dialect_meanings[dialect].append({
+                    'type': 'definition',
+                    'luhya_word': target,
+                    'meaning': source,
+                    'explanation': self.extract_explanation(source)
+                })
+            elif query_term.lower() == source.lower():
+                # This is translating from English
+                translations[dialect] = translations.get(dialect, [])
+                translations[dialect].append(target)
         
-        return "".join(response_parts)
+        # Generate natural response
+        if translations:
+            # English to Luhya translation
+            main_dialect = list(translations.keys())[0]
+            main_translation = translations[main_dialect][0]
+            
+            response_parts.append(f'In Luhya, *{query_term}* translates to **{main_translation}**')
+            
+            if len(translations) > 1:
+                response_parts.append(f' (primarily in the {main_dialect} dialect)')
+            
+            response_parts.append('.\n\n')
+            
+            # Show variations across dialects
+            if len(translations) > 1:
+                response_parts.append('**Variations across dialects:**\n')
+                for dialect, words in translations.items():
+                    unique_words = list(dict.fromkeys(words))  # Remove duplicates while preserving order
+                    response_parts.append(f'• **{dialect}:** *{", ".join(unique_words)}*\n')
+        
+        elif dialect_meanings:
+            # Luhya to English definition
+            main_dialect = list(dialect_meanings.keys())[0]
+            main_meanings = dialect_meanings[main_dialect]
+            
+            if main_meanings:
+                primary_meaning = main_meanings[0]
+                
+                response_parts.append(f'In Luhya')
+                if len(dialect_meanings) == 1:
+                    response_parts.append(f' (specifically the {main_dialect} dialect)')
+                
+                response_parts.append(f', *{query_term}* ')
+                
+                # Add context based on meaning
+                explanation = primary_meaning['explanation']
+                if 'greeting' in explanation.lower():
+                    response_parts.append('is a common greeting. ')
+                elif 'peace' in explanation.lower():
+                    response_parts.append('means **"peace."** ')
+                else:
+                    response_parts.append(f'means **"{primary_meaning["meaning"]}."** ')
+                
+                # Add more detailed explanations
+                if len(main_meanings) > 1:
+                    response_parts.append('\n\n**Different uses:**\n')
+                    for meaning in main_meanings[:3]:
+                        if meaning['explanation']:
+                            response_parts.append(f'• *{meaning["explanation"]}*\n')
+                
+                # Add dialect variations if present
+                if len(dialect_meanings) > 1:
+                    response_parts.append('\n**In other dialects:**\n')
+                    for dialect, meanings in list(dialect_meanings.items())[1:3]:  # Show up to 2 more dialects
+                        if meanings:
+                            response_parts.append(f'• **{dialect}:** similar usage\n')
+                
+                # Add cultural context
+                self.add_cultural_context(query_term.lower(), response_parts)
+        
+        return "".join(response_parts).strip()
+    
+    def extract_explanation(self, text: str) -> str:
+        """Extract meaningful explanation from source text"""
+        text = text.lower().strip()
+        
+        # Common patterns that indicate explanations
+        if 'greeting' in text and 'peace' in text:
+            return "greeting meaning 'peace'"
+        elif 'lit.' in text:
+            # Extract literal meaning
+            match = re.search(r"lit\.\s*['\"]([^'\"]+)['\"]", text)
+            if match:
+                return f"literally '{match.group(1)}'"
+        elif len(text) < 50 and not re.search(r'[.!?]{2,}', text):
+            return text
+        
+        return ""
+    
+    def add_cultural_context(self, word: str, response_parts: List[str]):
+        """Add cultural context for common Luhya words"""
+        contexts = {
+            'mulembe': "\n\nCulturally, *mulembe* is more than just a word—it's a way of greeting someone while wishing them peace and well-being.",
+            'asante': "\n\nThis word shows the influence of Swahili on some Luhya dialects.",
+            'nyasaye': "\n\nThis is the traditional Luhya name for God, widely used across different dialects.",
+            'mama': "\n\nUsed respectfully to address mothers or elder women in the community.",
+            'papa': "\n\nA respectful term for fathers or elder men."
+        }
+        
+        if word in contexts:
+            response_parts.append(contexts[word])
     
     def generate_no_results_response(self, query: str, intent_data: Dict) -> str:
         """Generate helpful no-results response"""
