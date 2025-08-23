@@ -6,6 +6,7 @@ import random
 from typing import List, Dict, Optional
 from urllib.request import urlopen
 from urllib.error import URLError
+from werkzeug.wrappers import Request, Response
 
 class RefinedLuhyaRAGSystem:
     def __init__(self):
@@ -484,36 +485,38 @@ class RefinedLuhyaRAGSystem:
 
 Try simpler terms or check your spelling!"""
 
-def handler(request):
-    """Main Vercel handler"""
-    
-    # CORS headers
-    cors_headers = {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': 'POST, OPTIONS',
-        'Access-Control-Allow-Headers': 'Content-Type'
-    }
-    
-    # Handle OPTIONS
-    if request.method == 'OPTIONS':
-        return {
-            'statusCode': 200,
-            'headers': cors_headers,
-            'body': ''
-        }
-    
-    # Only POST allowed
-    if request.method != 'POST':
-        return {
-            'statusCode': 405,
-            'headers': {**cors_headers, 'Content-Type': 'application/json'},
-            'body': json.dumps({'error': 'Method not allowed'})
-        }
-    
+def process_request(request_data):
+    """Process the request and return response data"""
     try:
+        method = request_data.get('httpMethod', '')
+        body = request_data.get('body', '{}')
+        
+        # CORS headers
+        cors_headers = {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'POST, OPTIONS',
+            'Access-Control-Allow-Headers': 'Content-Type'
+        }
+        
+        # Handle OPTIONS
+        if method == 'OPTIONS':
+            return {
+                'statusCode': 200,
+                'headers': cors_headers,
+                'body': ''
+            }
+        
+        # Only POST allowed
+        if method != 'POST':
+            return {
+                'statusCode': 405,
+                'headers': {**cors_headers, 'Content-Type': 'application/json'},
+                'body': json.dumps({'error': 'Method not allowed'})
+            }
+        
         # Parse request
         try:
-            body = json.loads(request.body)
+            body_data = json.loads(body)
         except json.JSONDecodeError:
             return {
                 'statusCode': 400,
@@ -521,7 +524,7 @@ def handler(request):
                 'body': json.dumps({'error': 'Invalid JSON'})
             }
         
-        message = body.get('message', '').strip()
+        message = body_data.get('message', '').strip()
         if not message:
             return {
                 'statusCode': 400,
@@ -575,10 +578,27 @@ def handler(request):
     except Exception as e:
         return {
             'statusCode': 500,
-            'headers': {**cors_headers, 'Content-Type': 'application/json'},
+            'headers': {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
+            },
             'body': json.dumps({
                 'error': 'Internal server error',
                 'message': str(e),
                 'response': 'Something went wrong. Please try again.'
             })
         }
+
+# WSGI application wrapper
+@Request.application
+def app(request):
+    result = process_request({
+        "httpMethod": request.method,
+        "body": request.get_data(as_text=True)
+    })
+
+    return Response(
+        response=result["body"],
+        status=result["statusCode"],
+        headers=result["headers"]
+    )
